@@ -22,3 +22,9 @@ h1, h1 * {
   color: white;
   text-decoration: none;
 }
+
+body#page-home h1 {
+  height: 200px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
