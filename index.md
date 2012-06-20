@@ -69,7 +69,7 @@ layout: default
   </tr>
 
   <tr>
-    <th rowspan=7>Searching</th>
+    <th rowspan="7">Searching</th>
     <td>Searching documents by simple queries</td>
     <td>&#x2713;</td><td>&#x2713;</td>
   </tr>
