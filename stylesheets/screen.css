@@ -13,5 +13,12 @@ body {
 
 h1 {
   background: url("header-bg.jpg") no-repeat top right;
+  margin: 0 -12.5%;
+  padding: 1em 0;
+  text-indent: 12.5%;
+}
+
+h1, h1 * {
   color: white;
+  text-decoration: none;
 }
