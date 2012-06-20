@@ -13,5 +13,4 @@ body {
 
 h1 {
   background: url("header-bg.jpg") no-repeat top right;
-  color: white;
 }
