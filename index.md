@@ -1,12 +1,9 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Groonga CloudSearch</title>
-  </head>
-  <body>
-    <h1>Groonga CloudSearch</h1>
+---
+layout: default
+---
 
-    <h2>Functional comparison</h2>
+## Functional comparison
+
     <table border="1">
       <tr>
         <th>Category</th>
@@ -127,5 +124,3 @@
         <td>&#x2713;</td><td></td>
       </tr>
     </table>
-  </body>
-</html>
