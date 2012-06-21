@@ -24,31 +24,31 @@ id: home
   </tr>
   <tr>
     <td>Authentications</td>
-    <td></td><td>&#x2713;</td>
+    <td>&#x2715;</td><td>&#x2713;</td>
   </tr>
   <tr>
     <td>Deletion of stored documents</td>
-    <td></td><td>&#x2713;</td>
+    <td>&#x2715;</td><td>&#x2713;</td>
   </tr>
   <tr>
     <td>Deletion of existing domains</td>
-    <td></td><td>&#x2713;</td>
+    <td>&#x2715;</td><td>&#x2713;</td>
   </tr>
   <tr>
     <td>Configuring existing search domains</td>
-    <td></td><td>&#x2713;</td>
+    <td>&#x2715;</td><td>&#x2713;</td>
   </tr>
   <tr>
     <td>Configuring existing index fields</td>
-    <td></td><td>&#x2713;</td>
+    <td>&#x2715;</td><td>&#x2713;</td>
   </tr>
   <tr>
     <td>Re-indexing of documents</td>
-    <td></td><td>&#x2713;</td>
+    <td>&#x2715;</td><td>&#x2713;</td>
   </tr>
   <tr>
     <td>Various type index fields (integer, reference, and so on)</td>
-    <td></td><td>&#x2713;</td>
+    <td>&#x2715;</td><td>&#x2713;</td>
   </tr>
 
   <tr>
@@ -58,15 +58,15 @@ id: home
   </tr>
   <tr>
     <td>Strict validations</td>
-    <td></td><td>&#x2713;</td>
+    <td>&#x2715;</td><td>&#x2713;</td>
   </tr>
   <tr>
     <td>Atomic operations</td>
-    <td></td><td>&#x2713;</td>
+    <td>&#x2715;</td><td>&#x2713;</td>
   </tr>
   <tr>
     <td>Document versions</td>
-    <td></td><td>&#x2713;</td>
+    <td>&#x2715;</td><td>&#x2713;</td>
   </tr>
 
   <tr>
@@ -76,52 +76,52 @@ id: home
   </tr>
   <tr>
     <td>Getting facet information with search results</td>
-    <td></td><td>&#x2713;</td>
+    <td>&#x2715;</td><td>&#x2713;</td>
   </tr>
   <tr>
     <td>Result ranking</td>
-    <td></td><td>&#x2713;</td>
+    <td>&#x2715;</td><td>&#x2713;</td>
   </tr>
   <tr>
     <td>Stemming</td>
-    <td></td><td>&#x2713;</td>
+    <td>&#x2715;</td><td>&#x2713;</td>
   </tr>
   <tr>
     <td>Stopwords</td>
-    <td></td><td>&#x2713;</td>
+    <td>&#x2715;</td><td>&#x2713;</td>
   </tr>
   <tr>
     <td>Synonyms</td>
-    <td></td><td>&#x2713;</td>
+    <td>&#x2715;</td><td>&#x2713;</td>
   </tr>
   <tr>
     <td>Searching documents by complex queries</td>
-    <td></td><td>&#x2713;</td>
+    <td>&#x2715;</td><td>&#x2713;</td>
   </tr>
 
   <tr>
     <th rowspan="6">Misc.</th>
     <td>XML type requests and responses</td>
-    <td></td><td>&#x2713;</td>
+    <td>&#x2715;</td><td>&#x2713;</td>
   </tr>
   <tr>
     <td>Management Console</td>
-    <td></td><td>&#x2713;</td>
+    <td>&#x2715;</td><td>&#x2713;</td>
   </tr>
   <tr>
     <td>Command line tools</td>
-    <td></td><td>&#x2713;</td>
+    <td>&#x2715;</td><td>&#x2713;</td>
   </tr>
   <tr>
     <td>Works on the cloud</td>
-    <td></td><td>&#x2713;</td>
+    <td>&#x2715;</td><td>&#x2713;</td>
   </tr>
   <tr>
     <td>Native CJK support (and better tokenizer)</td>
-    <td>&#x2713;</td><td></td>
+    <td>&#x2713;</td><td>&#x2715;</td>
   </tr>
   <tr>
     <td>Works locally</td>
-    <td>&#x2713;</td><td></td>
+    <td>&#x2713;</td><td>&#x2715;</td>
   </tr>
 </table>
