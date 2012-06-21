@@ -80,14 +80,11 @@ h1#global-heading {
   padding: 0.6em 1.2em;
   text-decoration: none;
   text-transform: uppercase;
-  -moz-transition: border-color 0.5s ease,
-                   -moz-box-shadow 0.5s ease,
-                   box-shadow 0.5s ease;
-  -webkit-transition: border-color 0.5s ease,
-                      -webkit-box-shadow 0.5s ease,
-                      box-shadow 0.5s ease;
-  transition: border-color 0.5s ease,
-              box-shadow 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 #download a:active,
