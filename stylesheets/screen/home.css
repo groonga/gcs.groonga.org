@@ -8,6 +8,7 @@ h1#global-heading {
   margin: 0 -12.5%;
   padding-bottom: 30px;
   padding-top: 30px;
+  position: relative;
 }
 
 #cover > * {
@@ -25,6 +26,7 @@ h1#global-heading {
 #cover h1 {
   font-size: 100%;
   font-style: italic;
+  margin-bottom: 20px;
 }
 
 #cover h1 .main-title {
@@ -39,4 +41,34 @@ h1#global-heading {
 #cover h1 .sub-title {
   display: block;
   font-size: 110%;
+}
+
+#description {
+  width: 50%;
+}
+
+#download {
+  position: absolute;
+  bottom: 40px;
+  margin: 0;
+  padding: 0 0 1em;
+  right: 12.5%;
+  width: 20%;
+}
+
+#download a {
+  background: green;
+  border: 2px solid #AAD5E8;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+  -moz-box-shadow: #D9F3FF 0 0 0.5em;
+  -webkit-box-shadow: #D9F3FF 0 0 0.5em;
+  box-shadow: #D9F3FF 0 0 0.5em;
+  clear: none;
+  color: white;
+  font-size: 120%;
+  padding: 0.6em 1.2em;
+  text-decoration: none;
+  text-transform: uppercase;
 }
