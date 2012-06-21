@@ -23,11 +23,20 @@ h1#global-heading {
 }
 
 #cover h1 {
-  font-size: 200%;
+  font-size: 100%;
   font-style: italic;
 }
 
-#cover h1 .subtitle {
+#cover h1 .main-title {
+  background: url("header-icon.png") no-repeat left;
   display: block;
-  font-size: 55%;
+  font-size: 200%;
+  margin-left: -40px;
+  min-height: 40px;
+  padding-left: 40px;
+}
+
+#cover h1 .sub-title {
+  display: block;
+  font-size: 110%;
 }
