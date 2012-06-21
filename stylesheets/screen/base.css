@@ -11,24 +11,6 @@ body {
   padding: 1em 10%;
 }
 
-h1 {
-  background: url("header-bg.jpg") no-repeat top right;
-  margin: 0 -12.5%;
-  padding: 1em 0;
-  text-indent: 12.5%;
-}
-
-h1, h1 * {
-  color: white;
-  text-decoration: none;
-}
-
-body#page-home h1 {
-  height: 200px;
-  padding-bottom: 50px;
-  padding-top: 50px;
-}
-
 .functional-ok {
   color: #00BF2B;
   text-shadow: #5AFF79 0 0 0.2em;

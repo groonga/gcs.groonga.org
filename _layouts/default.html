@@ -2,10 +2,13 @@
 <html>
   <head>
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-    <link href="/stylesheets/screen.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/screen/base.css" media="screen" rel="stylesheet" type="text/css" />
+    {% if page.style %}
+      <link href="/stylesheets/{{ page.style }}" media="screen" rel="stylesheet" type="text/css" />
+    {% endif %}
   </head>
   <body{% if page.id %} id="page-{{ page.id }}"{% endif %}>
-    <h1><a href="/">Groonga CloudSearch</a></h1>
+    <h1 id="global-heading"><a href="/">Groonga CloudSearch</a></h1>
     {{ content }}
   </body>
 </html>

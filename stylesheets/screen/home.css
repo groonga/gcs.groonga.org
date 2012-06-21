@@ -1,0 +1,33 @@
+h1#global-heading {
+  display: none;
+}
+
+#cover {
+  background: #286DA0 url("header-bg.jpg") no-repeat right;
+  min-height: 200px;
+  margin: 0 -12.5%;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+#cover > * {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#cover,
+#cover * {
+  color: white;
+  text-decoration: none;
+  text-shadow: #0A344C 0 0 0.5em;
+}
+
+#cover h1 {
+  font-size: 200%;
+  font-style: italic;
+}
+
+#cover h1 .subtitle {
+  display: block;
+  font-size: 55%;
+}
