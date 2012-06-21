@@ -20,3 +20,20 @@ body {
   color: #FF4000;
   text-shadow: #FF9750 0 0 0.2em;
 }
+
+#fork-me {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  text-indent: 0;
+  top: 0;
+}
+
+#fork-me a {
+  background: url("http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png") no-repeat;
+  display: block;
+  color: transparent;
+  height: 149px;
+  width: 149px;
+}
