@@ -28,3 +28,13 @@ body#page-home h1 {
   padding-bottom: 50px;
   padding-top: 50px;
 }
+
+.functional-ok {
+  color: #00BF2B;
+  text-shadow: #5AFF79 0 0 0.2em;
+}
+
+.functional-ng {
+  color: #FF4000;
+  text-shadow: #FF9750 0 0 0.2em;
+}
