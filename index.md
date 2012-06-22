@@ -12,6 +12,34 @@ style: screen/home.css
   <p id="download"><a href="./install.html">Download</a></p>
 </section>
 
+
+<section id="features">
+  <h2>Features</h2>
+
+  <section id="features-acs-compatible">
+    <h3>Amazon CloudSearch compatible.</h3>
+    <p>You can switch the backend of your product from ACS to GCS easily.</p>
+  </section>
+
+  <section id="features-oss">
+    <h3>Open source.</h3>
+    <p>You can use (and develop) GCS freely.</p>
+  </section>
+
+<!--
+  <section id="features-cjk">
+    <h3>Native CJK support.</h3>
+    <p>GCS includes powerful tokenizer for CJK texts.</p>
+  </section>
+-->
+
+  <section id="features-local">
+    <h3>Works locally.</h3>
+    <p>You don't have to access to ACS service while you are developing.</p>
+  </section>
+</section>
+
+
 ## Functional comparison
 
 <table id="functional-comparison-table">
