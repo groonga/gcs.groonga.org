@@ -93,6 +93,10 @@ table > tr:first-child > * {
   border-top: none;
 }
 
+thead {
+  border-bottom: 2px solid gray;
+}
+
 tr > *:first-child {
   border-left: none;
 }
@@ -103,19 +107,20 @@ tr > *:last-child {
 
 
 .functional-ok {
-  background: #C0FFAB;
+  background: #A0D8CD;
   color: #00BF2B;
   text-shadow: #5AFF79 0 0 0.2em;
 }
 
 .functional-ng {
-  background: #FFC0AB;
+  background: #EFC867;
   color: #FF4000;
   text-shadow: #FF9750 0 0 0.2em;
 }
 
 table .functional-ok,
 table .functional-ng {
+  font-size; 150%;
   text-align: center;
 }
 
