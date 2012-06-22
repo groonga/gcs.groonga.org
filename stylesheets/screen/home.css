@@ -5,15 +5,15 @@ h1#global-heading {
 #cover {
   background: #286DA0 url("header-bg.jpg") no-repeat right;
   min-height: 200px;
-  margin: 0 -12.5%;
+  margin: 0 -21.5%;
   padding-bottom: 30px;
   padding-top: 30px;
   position: relative;
 }
 
 #cover > * {
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 #cover,

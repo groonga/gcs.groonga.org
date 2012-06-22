@@ -9,7 +9,7 @@ body {
                sans-serif;
   font-size: 95%;
   margin: 0;
-  padding: 80px 10% 1em;
+  padding: 80px 15% 1em;
 }
 
 h1 {
@@ -52,10 +52,10 @@ h1#global-heading {
 
 nav {
   font-size: 90%;
-  left: 10%;
+  left: 15%;
   position: absolute;
   top: 90px;
-  right: 10%;
+  right: 15%;
 }
 
 nav ul,
