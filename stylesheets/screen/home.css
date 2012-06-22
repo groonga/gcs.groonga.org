@@ -35,6 +35,7 @@ h1#global-heading {
   background: url("header-icon.png") no-repeat left;
   display: block;
   font-size: 200%;
+  letter-spacing: -0.04em;
   margin-left: -40px;
   min-height: 40px;
   padding-left: 40px;
@@ -97,4 +98,8 @@ h1#global-heading {
   -moz-box-shadow: #D9F3FF 0 0 0.8em;
   -webkit-box-shadow: #D9F3FF 0 0 0.8em;
   box-shadow: #D9F3FF 0 0 0.8em;
+}
+
+nav {
+  top: 35px;
 }
