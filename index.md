@@ -14,14 +14,16 @@ style: screen/home.css
 
 ## Functional comparison
 
-<table border="1">
+<table>
+  <thead>
   <tr>
     <th>Category</th>
     <th>Feature</th>
     <th>Groonga CloudSearch</th>
     <th>Amazon CloudSearch</th>
   </tr>
-
+  </thead>
+  <tbody>
   <tr>
     <th rowspan="9">Configuration</th>
     <td>Creating search domains</td>
@@ -133,4 +135,5 @@ style: screen/home.css
     <td>Works locally</td>
     <td><span class="functional-ok">&#x2713;</span></td><td><span class="functional-ng">&#x2715;</span></td>
   </tr>
+  </tbody>
 </table>
