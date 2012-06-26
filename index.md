@@ -41,7 +41,7 @@ style: screen/home.css
 </section>
 
 
-## Functional comparison
+## Functional comparison {#functional-comparison}
 
 <table id="functional-comparison-table">
   <thead>
