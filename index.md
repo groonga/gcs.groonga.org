@@ -5,10 +5,11 @@ style: screen/home.css
 
 <section id="cover">
   <h1><span class="main-title">Groonga CloudSearch</span>
-      <span class="sub-title">Open source implementation of Amazon CloudSearch</span></h1>
-  <p id="description">The Groonga CloudSearch (GCS) is an alternative implementation of
-     the Amazon CloudSearch (ACS), developed as an OSS project.
-     You can try the ACS freely without accessing the actual service.</p>
+      <span class="sub-title">Open Source Amazon CloudSearch on Your Computer</span></h1>
+
+  <p id="description">Groonga CloudSearch is an Amazon CloudSearch
+     compatible open source full text search service.</p>
+
   <p id="install"><a href="install/">Install</a></p>
 </section>
 
