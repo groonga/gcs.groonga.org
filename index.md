@@ -9,7 +9,7 @@ style: screen/home.css
   <p id="description">The Groonga CloudSearch (GCS) is an alternative implementation of
      the Amazon CloudSearch (ACS), developed as an OSS project.
      You can try the ACS freely without accessing the actual service.</p>
-  <p id="download"><a href="./install.html">Download</a></p>
+  <p id="install"><a href="install/">Install</a></p>
 </section>
 
 
