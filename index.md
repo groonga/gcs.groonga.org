@@ -17,8 +17,8 @@ style: screen/home.css
 </section>
 
 
-<section id="other-documents">
-  <h2>Other Documents</h2>
+<section id="more-documents">
+  <h2>More Documents</h2>
   <ul>
     <li><a href="/faq/">FAQ</a></li>
     <li><a href="/blog/">Blog (News Topics)</a></li>

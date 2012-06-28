@@ -123,19 +123,19 @@ nav {
   display: none;
 }
 
-#other-documents ul {
+#more-documents ul {
   margin: 0;
   padding: 0;
 }
 
-#other-documents ul li {
+#more-documents ul li {
   border-right: 1px solid;
   display: inline;
   margin: 0 1em 0 0;
   padding: 0 1em 0 0;
 }
 
-#other-documents ul li:last-child {
+#more-documents ul li:last-child {
   border-right: 0 none;
   margin-right: 0;
   padding-right: 0;
