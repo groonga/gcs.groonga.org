@@ -153,8 +153,9 @@ table .functional-ng {
 
 #fork-me a {
   background: url("http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png") no-repeat;
-  display: block;
   color: transparent;
+  display: block;
   height: 149px;
+  text-shadow: none;
   width: 149px;
 }
