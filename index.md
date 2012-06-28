@@ -17,34 +17,11 @@ style: screen/home.css
 </section>
 
 
-<section id="menu">
-  <h2>What are you interested?</h2>
+## Other Documents
 
-  <section id="menu-install">
-    <h3><a href="/install/">Get Started!</a></h3>
-    <p><a href="/install/">Let's install the Groonga CloudSearch to your local machine!</a></p>
-  </section>
-
-  <section id="menu-tutorial">
-    <h3><a href="/tutorial/">Tutorial</a></h3>
-    <p><a href="/tutorial/">Let's start to develop your application on Amazon CloudSearch, with Groonga CloudSearch!</a></p>
-  </section>
-
-  <section id="menu-faq">
-    <h3><a href="/faq/">FAQ</a></h3>
-    <p><a href="/faq/">Any question?</a></p>
-  </section>
-
-  <section id="menu-news">
-    <h3><a href="/blog/">News Topics</a></h3>
-    <p><a href="/blog/">Subscribe to latest information about Groonga CloudSearch!</a></p>
-  </section>
-
-  <section id="menu-involved">
-    <h3><a href="https://github.com/groonga/gcs">Get Involved!</a></h3>
-    <p><a href="https://github.com/groonga/gcs">Groonga CloudSearch project is hosted on the GitHub. Please fork it, and send pull requests to us!</a></p>
-  </section>
-</section>
+* [FAQ](/faq/)
+* [Blog (News Topics)](/blog/)
+* [Repository (GitHub)](https://github.com/groonga/gcs)
 
 
 ## Functional comparison {#functional-comparison}
