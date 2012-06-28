@@ -14,29 +14,27 @@ style: screen/home.css
 </section>
 
 
-<section id="features">
-  <h2>Features</h2>
+<section id="menu">
+  <h2>What are you interested?</h2>
 
-  <section id="features-acs-compatible">
-    <h3>Amazon CloudSearch compatible.</h3>
-    <p>You can switch the backend of your product from ACS to GCS easily.</p>
+  <section id="menu-install">
+    <h3><a href="/install/">Getting Started</a></h3>
+    <p><a href="/install/">Let's install the Groonga CloudSearch to your local machine!</a></p>
   </section>
 
-  <section id="features-oss">
-    <h3>Open source.</h3>
-    <p>You can use (and develop) GCS freely.</p>
+  <section id="menu-tutorial">
+    <h3><a href="/tutorial/">Tutorial</a></h3>
+    <p><a href="/tutorial/">Let's start to develop your application on Amazon CloudSearch, with Groonga CloudSearch!</a></p>
   </section>
 
-<!--
-  <section id="features-cjk">
-    <h3>Native CJK support.</h3>
-    <p>GCS includes powerful tokenizer for CJK texts.</p>
+  <section id="menu-faq">
+    <h3><a href="/faq/">FAQ</a></h3>
+    <p><a href="/faq/">Any question?</a></p>
   </section>
--->
 
-  <section id="features-local">
-    <h3>Works locally.</h3>
-    <p>You don't have to access to ACS service while you are developing.</p>
+  <section id="menu-news">
+    <h3><a href="/blog/">News Topics</a></h3>
+    <p><a href="/blog/">Subscribe to latest information about Groonga CloudSearch!</a></p>
   </section>
 </section>
 
