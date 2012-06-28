@@ -13,6 +13,17 @@ body {
   padding: 80px 15% 1em;
 }
 
+:link,
+:visited {
+  color: #123D70;
+  text-decoration: underline;
+  text-shadow: #9AA4AC 0 0 0.25em;
+}
+
+:visited {
+  color: #5D707C;
+}
+
 h1 {
   font-size: 120%;
 }
@@ -69,12 +80,6 @@ nav ul li {
 
 nav ul li {
   padding-right: 1em;
-}
-
-nav :link,
-nav :visited {
-  color: black;
-  text-shadow: #9AA4AC 0 0 0.25em;
 }
 
 footer {
