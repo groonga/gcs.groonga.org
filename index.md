@@ -43,6 +43,11 @@ style: screen/home.css
 
 ## Functional comparison {#functional-comparison}
 
+* [Configuration](#functional-comparison-configuration)
+* [Uploading](#functional-comparison-uploading)
+* [Searching](#functional-comparison-searching)
+* [Misc.](#functional-comparison-misc)
+
 <table id="functional-comparison-table">
   <thead>
   <tr>
@@ -53,7 +58,7 @@ style: screen/home.css
   </tr>
   </thead>
 
-  <tbody>
+  <tbody id="functional-comparison-configuration">
   <tr>
     <th rowspan="9">Configuration</th>
     <td>Creating search domains</td>
@@ -91,7 +96,9 @@ style: screen/home.css
     <td>Various type index fields (integer, reference, and so on)</td>
     <td class="functional-ng">&#x2715;</td><td class="functional-ok">&#x2713;</td>
   </tr>
+  </tbody>
 
+  <tbody id="functional-comparison-uploading">
   <tr>
     <th rowspan="4">Uploading</th>
     <td>Uploading search documents as JSON batches (SDF batches)</td>
@@ -109,7 +116,9 @@ style: screen/home.css
     <td>Document versions</td>
     <td class="functional-ng">&#x2715;</td><td class="functional-ok">&#x2713;</td>
   </tr>
+  </tbody>
 
+  <tbody id="functional-comparison-searching">
   <tr>
     <th rowspan="7">Searching</th>
     <td>Searching documents by simple queries</td>
@@ -139,7 +148,9 @@ style: screen/home.css
     <td>Searching documents by complex queries</td>
     <td class="functional-ng">&#x2715;</td><td class="functional-ok">&#x2713;</td>
   </tr>
+  </tbody>
 
+  <tbody id="functional-comparison-misc">
   <tr>
     <th rowspan="6">Misc.</th>
     <td>XML type requests and responses</td>
