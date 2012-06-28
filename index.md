@@ -17,11 +17,14 @@ style: screen/home.css
 </section>
 
 
-## Other Documents
-
-* [FAQ](/faq/)
-* [Blog (News Topics)](/blog/)
-* [Repository (GitHub)](https://github.com/groonga/gcs)
+<section id="other-documents">
+  <h2>Other Documents</h2>
+  <ul>
+    <li><a href="/faq/">FAQ</a></li>
+    <li><a href="/blog/">Blog (News Topics)</a></li>
+    <li><a href="https://github.com/groonga/gcs">Repository (GitHub)</a></li>
+  </ul>
+</section>
 
 
 ## Functional comparison {#functional-comparison}
