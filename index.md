@@ -10,7 +10,10 @@ style: screen/home.css
   <p id="description">Groonga CloudSearch is an Amazon CloudSearch
      compatible open source full text search service.</p>
 
-  <p id="install"><a href="install/">Install</a></p>
+  <div id="featured">
+    <p id="install"><a href="install/">Install</a></p>
+    <p id="tutorial"><a href="tutorial/">Tutorial</a></p>
+  </div>
 </section>
 
 
