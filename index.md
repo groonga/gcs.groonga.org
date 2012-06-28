@@ -43,11 +43,6 @@ style: screen/home.css
 
 ## Functional comparison {#functional-comparison}
 
-* [Configuration](#functional-comparison-configuration)
-* [Uploading](#functional-comparison-uploading)
-* [Searching](#functional-comparison-searching)
-* [Misc.](#functional-comparison-misc)
-
 <table id="functional-comparison-table">
   <thead>
   <tr>
@@ -60,92 +55,92 @@ style: screen/home.css
 
   <tbody id="functional-comparison-configuration">
   <tr>
-    <th rowspan="9">Configuration</th>
-    <td>Creating search domains</td>
+    <th rowspan="9"><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/ConfigAPI.html">Configuration</a></th>
+    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/creatingdomains.html">Creating search domains</a></td>
     <td class="functional-ok">&#x2713;</td><td class="functional-ok">&#x2713;</td>
   </tr>
   <tr>
-    <td>Creating text type index fields</td>
+    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/configureindexfields.html">Creating text type index fields</a></td>
     <td class="functional-ok">&#x2713;</td><td class="functional-ok">&#x2713;</td>
   </tr>
   <tr>
-    <td>Authentications</td>
+    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/requestauth.html">Authentications</a></td>
     <td class="functional-ng">&#x2715;</td><td class="functional-ok">&#x2713;</td>
   </tr>
   <tr>
-    <td>Deletion of stored documents</td>
+    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/deletedomain.html">Deletion of existing domains</a></td>
     <td class="functional-ng">&#x2715;</td><td class="functional-ok">&#x2713;</td>
   </tr>
   <tr>
-    <td>Deletion of existing domains</td>
+    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/configureaccess.html">Configuring existing search domains</a></td>
     <td class="functional-ng">&#x2715;</td><td class="functional-ok">&#x2713;</td>
   </tr>
   <tr>
-    <td>Configuring existing search domains</td>
+    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/configureindexfields.html">Configuring existing index fields</a></td>
     <td class="functional-ng">&#x2715;</td><td class="functional-ok">&#x2713;</td>
   </tr>
   <tr>
-    <td>Configuring existing index fields</td>
+    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/indexing.html">Re-indexing of documents</a></td>
     <td class="functional-ng">&#x2715;</td><td class="functional-ok">&#x2713;</td>
   </tr>
   <tr>
-    <td>Re-indexing of documents</td>
-    <td class="functional-ng">&#x2715;</td><td class="functional-ok">&#x2713;</td>
-  </tr>
-  <tr>
-    <td>Various type index fields (integer, reference, and so on)</td>
+    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/configureindexfields.html">Various type index fields (integer, reference, and so on)</a></td>
     <td class="functional-ng">&#x2715;</td><td class="functional-ok">&#x2713;</td>
   </tr>
   </tbody>
 
   <tbody id="functional-comparison-uploading">
   <tr>
-    <th rowspan="4">Uploading</th>
-    <td>Uploading search documents as JSON batches (SDF batches)</td>
+    <th rowspan="4"><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/DocSvcAPI.html">Uploading</a></a></th>
+    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/senddata.html">Uploading search documents as JSON batches (SDF batches)</a></td>
     <td class="functional-ok">&#x2713;</td><td class="functional-ok">&#x2713;</td>
   </tr>
   <tr>
-    <td>Strict validations</td>
+    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/deldocs.html">Deletion of stored documents</a></td>
     <td class="functional-ng">&#x2715;</td><td class="functional-ok">&#x2713;</td>
   </tr>
   <tr>
-    <td>Atomic operations</td>
+    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/Limits.html">Strict validations</a></td>
     <td class="functional-ng">&#x2715;</td><td class="functional-ok">&#x2713;</td>
   </tr>
   <tr>
-    <td>Document versions</td>
+    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/creatingsdf.html">Atomic operations</a></td>
+    <td class="functional-ng">&#x2715;</td><td class="functional-ok">&#x2713;</td>
+  </tr>
+  <tr>
+    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/versioning.html">Document versions</a></td>
     <td class="functional-ng">&#x2715;</td><td class="functional-ok">&#x2713;</td>
   </tr>
   </tbody>
 
   <tbody id="functional-comparison-searching">
   <tr>
-    <th rowspan="7">Searching</th>
-    <td>Searching documents by simple queries</td>
+    <th rowspan="7"><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/SearchAPI.html">Searching</a></th>
+    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/simplesearches.html">Searching documents by simple queries</a></td>
     <td class="functional-ok">&#x2713;</td><td class="functional-ok">&#x2713;</td>
   </tr>
   <tr>
-    <td>Getting facet information with search results</td>
+    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/faceting.html">Getting facet information with search results</a>td>
     <td class="functional-ng">&#x2715;</td><td class="functional-ok">&#x2713;</td>
   </tr>
   <tr>
-    <td>Result ranking</td>
+    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/tuneranking.html">Result ranking</a></td>
     <td class="functional-ng">&#x2715;</td><td class="functional-ok">&#x2713;</td>
   </tr>
   <tr>
-    <td>Stemming</td>
+    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/stemmingopts.html">Stemming</a></td>
     <td class="functional-ng">&#x2715;</td><td class="functional-ok">&#x2713;</td>
   </tr>
   <tr>
-    <td>Stopwords</td>
+    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/stoppingopts.html">Stopwords</a></td>
     <td class="functional-ng">&#x2715;</td><td class="functional-ok">&#x2713;</td>
   </tr>
   <tr>
-    <td>Synonyms</td>
+    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/synonymopts.html">Synonyms</a></td>
     <td class="functional-ng">&#x2715;</td><td class="functional-ok">&#x2713;</td>
   </tr>
   <tr>
-    <td>Searching documents by complex queries</td>
+    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/searching.html">Searching documents by complex queries</a></td>
     <td class="functional-ng">&#x2715;</td><td class="functional-ok">&#x2713;</td>
   </tr>
   </tbody>
@@ -153,15 +148,15 @@ style: screen/home.css
   <tbody id="functional-comparison-misc">
   <tr>
     <th rowspan="6">Misc.</th>
-    <td>XML type requests and responses</td>
+    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/DocumentsBatch.XML.html">XML type requests and responses</a></td>
     <td class="functional-ng">&#x2715;</td><td class="functional-ok">&#x2713;</td>
   </tr>
   <tr>
-    <td>Management Console</td>
+    <td><a href="https://console.aws.amazon.com/cloudsearch/home/">Management Console</a></td>
     <td class="functional-ng">&#x2715;</td><td class="functional-ok">&#x2713;</td>
   </tr>
   <tr>
-    <td>Command line tools</td>
+    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/SvcCLT.html">Command line tools</a></td>
     <td class="functional-ng">&#x2715;</td><td class="functional-ok">&#x2713;</td>
   </tr>
   <tr>
