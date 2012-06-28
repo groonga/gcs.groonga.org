@@ -37,12 +37,12 @@ h1, h2, h3, h4, h5 {
   margin-bottom: 2em;
 }
 
-h1, h1 *,
-h2, h2 *,
-h3, h3 *,
-h4, h4 *,
-h5, h5 *,
-th {
+h1, h1 *, h1 :link, h1 :visited,
+h2, h2 *, h2 :link, h2 :visited,
+h3, h3 *, h3 :link, h3 :visited,
+h4, h4 *, h4 :link, h4 :visited,
+h5, h5 *, h5 :link, h5 :visited,
+th, th :link, th :visited {
   color: white;
   font-weight: normal;
   text-decoration: none;
