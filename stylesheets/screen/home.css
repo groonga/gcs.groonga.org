@@ -1,3 +1,8 @@
+body {
+  border-top: 0 none;
+  padding-top: 10px;
+}
+
 h1#global-heading {
   display: none;
 }
@@ -34,7 +39,7 @@ h1#global-heading {
 #cover h1 .main-title {
   background: url("header-icon.png") no-repeat left;
   display: block;
-  font-size: 200%;
+  font-size: 250%;
   letter-spacing: -0.04em;
   margin-left: -40px;
   min-height: 40px;
@@ -91,9 +96,9 @@ h1#global-heading {
   transition: all 0.5s ease;
 }
 
-#download a:active,
-#download a:focus,
-#download a:hover {
+#install a:active,
+#install a:focus,
+#install a:hover {
   border-color: #AAD5E8;
   -moz-box-shadow: #D9F3FF 0 0 0.8em;
   -webkit-box-shadow: #D9F3FF 0 0 0.8em;
@@ -101,7 +106,7 @@ h1#global-heading {
 }
 
 nav {
-  top: 35px;
+  display: none;
 }
 
 #features section {
