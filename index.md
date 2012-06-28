@@ -91,7 +91,7 @@ style: screen/home.css
 
   <tbody id="functional-comparison-uploading">
   <tr>
-    <th rowspan="4"><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/DocSvcAPI.html">Uploading</a></th>
+    <th rowspan="5"><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/DocSvcAPI.html">Uploading</a></th>
     <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/senddata.html">Uploading search documents as JSON batches (SDF batches)</a></td>
     <td class="functional-ok">&#x2713;</td><td class="functional-ok">&#x2713;</td>
   </tr>
