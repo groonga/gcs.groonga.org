@@ -91,7 +91,7 @@ style: screen/home.css
 
   <tbody id="functional-comparison-uploading">
   <tr>
-    <th rowspan="4"><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/DocSvcAPI.html">Uploading</a></a></th>
+    <th rowspan="4"><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/DocSvcAPI.html">Uploading</a></th>
     <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/senddata.html">Uploading search documents as JSON batches (SDF batches)</a></td>
     <td class="functional-ok">&#x2713;</td><td class="functional-ok">&#x2713;</td>
   </tr>
@@ -120,7 +120,7 @@ style: screen/home.css
     <td class="functional-ok">&#x2713;</td><td class="functional-ok">&#x2713;</td>
   </tr>
   <tr>
-    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/faceting.html">Getting facet information with search results</a>td>
+    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/faceting.html">Getting facet information with search results</a></td>
     <td class="functional-ng">&#x2715;</td><td class="functional-ok">&#x2713;</td>
   </tr>
   <tr>
