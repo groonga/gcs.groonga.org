@@ -18,7 +18,7 @@ style: screen/home.css
   <h2>What are you interested?</h2>
 
   <section id="menu-install">
-    <h3><a href="/install/">Getting Started</a></h3>
+    <h3><a href="/install/">Get Started!</a></h3>
     <p><a href="/install/">Let's install the Groonga CloudSearch to your local machine!</a></p>
   </section>
 
@@ -35,6 +35,11 @@ style: screen/home.css
   <section id="menu-news">
     <h3><a href="/blog/">News Topics</a></h3>
     <p><a href="/blog/">Subscribe to latest information about Groonga CloudSearch!</a></p>
+  </section>
+
+  <section id="menu-involved">
+    <h3><a href="https://github.com/groonga/gcs">Get Involved!</a></h3>
+    <p><a href="https://github.com/groonga/gcs">Groonga CloudSearch project is hosted on the GitHub. Please fork it, and send pull requests to us!</a></p>
   </section>
 </section>
 
