@@ -22,6 +22,7 @@ style: screen/home.css
   <ul>
     <li><a href="/faq/">FAQ</a></li>
     <li><a href="/blog/">Blog (News Topics)</a></li>
+    <li><a href="/community/">Community</a></li>
     <li><a href="https://github.com/groonga/gcs">Repository (GitHub)</a></li>
   </ul>
 </section>
