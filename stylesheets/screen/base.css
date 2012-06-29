@@ -25,11 +25,15 @@ body {
 }
 
 h1 {
-  font-size: 120%;
+  font-size: 150%;
 }
 
 h2 {
   font-size: 110%;
+}
+
+h3 {
+  font-size: 100%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -50,8 +54,13 @@ th, th :link, th :visited {
                #0A344C 0 0 0.5em;
 }
 
+h3:before {
+  content: "- ";
+}
+
 h1#global-heading {
   background: url("header-icon.png") no-repeat left;
+  font-size: 120%;
   font-style: italic;
   letter-spacing: -0.04em;
   line-height: 1;
