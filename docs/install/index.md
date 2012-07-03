@@ -37,7 +37,7 @@ If you got 1.0.0, Groonga CloudSearch is installed successfully! Yey!
 There are yum repositories that provide softwares required by Groonga
 CloudSearch. Here are instructions to install required softwares:
 
-Add yum repositories for Node.js and groonga:
+Add yum repositories for Node.js and [groonga](../faq/#search-engine):
 
     sudo rpm -ivh http://nodejs.tchol.org/repocfg/el/nodejs-stable-release.noarch.rpm
     sudo rpm -ivh http://packages.groonga.org/centos/groonga-release-1.1.0-0.noarch.rpm
@@ -67,8 +67,9 @@ If you got 1.0.0, Groonga CloudSearch is installed successfully! Yey!
 There is apt repositories that provide softwares required by Groonga
 CloudSearch. Here are instructions to install required softwares:
 
-To add apt repository for groonga, create
-`/etc/apt/sources.list.d/groonga.list` file with the following content:
+To add apt repository for [groonga](../faq/#search-engine), create
+`/etc/apt/sources.list.d/groonga.list` file with the following
+content:
 
     deb http://packages.groonga.org/ubuntu/ precise universe
     deb-src http://packages.groonga.org/ubuntu/ precise universe
