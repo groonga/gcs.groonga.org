@@ -27,7 +27,7 @@ You have `gcs` command that starts Groonga CloudSearch service in
 To confirm that Groonga ClouldSearch is installed successfully, type
 the following command:
 
-    % gcs-1.0.0/gcs
+    % gcs-1.0.0/gcs --version
     1.0.0
 
 If you got 1.0.0, Groonga CloudSearch is installed successfully! Yey!
@@ -57,7 +57,7 @@ You have `gcs` command that starts Groonga CloudSearch service in
 To confirm that Groonga ClouldSearch is installed successfully, type
 the following command:
 
-    % gcs
+    % gcs --version
     1.0.0
 
 If you got 1.0.0, Groonga CloudSearch is installed successfully! Yey!
@@ -94,7 +94,7 @@ You have `gcs` command that starts Groonga CloudSearch service in
 To confirm that Groonga ClouldSearch is installed successfully, type
 the following command:
 
-    % gcs
+    % gcs --version
     1.0.0
 
 If you got 1.0.0, Groonga CloudSearch is installed successfully! Yey!
@@ -114,7 +114,7 @@ You have `gcs` command that starts Groonga CloudSearch service.
 To confirm that Groonga ClouldSearch is installed successfully, type
 the following command:
 
-    % gcs
+    % gcs --version
     1.0.0
 
 If you got 1.0.0, Groonga CloudSearch is installed successfully! Yey!
