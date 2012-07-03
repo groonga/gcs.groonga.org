@@ -149,6 +149,30 @@ table .functional-ng {
   text-align: center;
 }
 
+code, pre {
+  font-family: monospace;
+  background: #E5F1FB;
+  -moz-border-radius: 0.3em;
+  -webkit-border-radius: 0.3em;
+  -o-border-radius: 0.3em;
+  -ms-border-radius: 0.3em;
+  border-radius: 0.3em;
+  border: #A5C1CB 1px solid;
+  padding: 0.5em 1em;
+}
+
+code {
+  padding: 0.1em 0.25em;
+}
+
+pre code {
+  background: transparent;
+  border: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+
 
 #fork-me {
   margin: 0;
