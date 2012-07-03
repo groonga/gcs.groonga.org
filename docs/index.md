@@ -6,16 +6,19 @@ layout: default
 
 ## About Groonga CloudSearch
 
- * [FAQ](faq/):
-   Frequently asked questions about Groonga CloudSearch.
- * [Install](install/):
-   Install instructions of Groonga CloudSearch.
- * [Tutorial](tutorial/):
-   The document to get started with Groonga CloudSearch.
- * [Restictions](restrictions/):
-   The document about the current restrictions of Groonga CloudSearch.
+[Install](install/) describes how to install Groonga CloudSearch.
+
+[Tutorial](tutorial/) showes Groonga CloudSearch introduction.
+
+[Restictions](restrictions/) lists the current restrictions
+restrictions of Groonga CloudSearch.
+
+[FAQ](faq/) answers frequently asked questions about Groonga
+CloudSearch.
 
 ## About Amazon CloudSaerch
 
- * [Amazon CloudSearch Developer Guide](http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/):
-   This is the official document of the Amazon CloudSearch, including tutorials and API references.
+[Amazon CloudSearch Developer
+Guide](http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/)
+is the official document of Amazon CloudSearch. It has tutorials and
+API references.
