@@ -32,3 +32,9 @@ layout: default
  * [groonga's mailing list](http://groonga.org/docs/community.html):
    Because the Groonga CloudSearch was started as a sub project of the [groonga project](http://groonga.org/),
    they have strong relationship. Most members of this project are active on the groonga's mailing list too.
+
+## Twitter
+
+ * [@groonga](https://twitter.com/groonga):
+   The official account of the [groonga project](http://groonga.org).
+   Groonga CloudSearch also uses this account.
