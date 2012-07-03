@@ -6,7 +6,7 @@ layout: default
 
 ## Mac OS X
 
-    curl -O http://packages.groonga.org/gcs/macosx/gcs-1.0.0.tar.gz
+    curl -O http://packages.groonga.org/macosx/gcs/gcs-1.0.0.tar.gz
     tar xvzf gcs-1.0.0.tar.gz
     cd gcs-1.0.0
     ./gcs
