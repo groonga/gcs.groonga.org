@@ -22,5 +22,5 @@ It is named as "CloudSearch" but it's not a SaaS. It is a software installable t
 
 The Groonga CloudSearch works as a web server which provides Web APIs compatible to the Amazon CloudSearch via HTTP. So, on the early phase, you can develop web apps as you like, you can measure the traffic, and so on, without signing up to the Amazon Web Services. When you are ready to release your service on the Web, you'll switch the back-end from the Groonga CloudSearch to the Amazon CloudSearch. You just have to change the end point (hostname of the URL to access to APIs) from "localhost" to "amazonaws.com".
 
-Currently, Groonga CloudSearch supports only some basic features of the Amazon ClourSearch APIs. We are keeping up to grow the compatibility. If you'd like to get involved, fork the [repository on GitHub](https://github.com/groonga/gcs) and send pull requests to us, please. Of course, we are also welcome your feedback.
+Currently, Groonga CloudSearch supports only some basic features of the Amazon CloudSearch APIs. We are keeping up to grow the compatibility. If you'd like to get involved, fork the [repository on GitHub](https://github.com/groonga/gcs) and send pull requests to us, please. Of course, we are also welcome your feedback.
 
