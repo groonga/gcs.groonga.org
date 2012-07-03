@@ -5,7 +5,7 @@ layout: default
 
 # FAQ
 
-## Why Groonga CloudSearch development is started?
+## Why Groonga CloudSearch development is started? {#why-started}
 
 It's for development.
 
@@ -21,7 +21,7 @@ it locally because it is fast rather than remote access and doesn't
 cause fee. Fast and no fee are important for TDD style development and
 development with continuous integration.
 
-## Does Groonga CloudSearch work in the cloud?
+## Does Groonga CloudSearch work in the cloud? {#work-in-the-cloud}
 
 No. Groonga CloudSearch isn't provided as SaaS and doesn't support
 auto scale-out and scale-. You need to install Groonga CloudSearch by yourself
@@ -33,7 +33,7 @@ CloudSearch. You just download, extract and run it! Try Groonga
 CloudSearch before trying Amazon CloudSearch. You can get Amazon
 CloudSearch compatible API without fee.
 
-## Why Groonga CloudSearch has "Cloud" in its name?
+## Why Groonga CloudSearch has "Cloud" in its name? {#why-cloud-in-name}
 
 It's for indicating Amazon CloudSearch compatible API service with its
 name.
@@ -41,11 +41,11 @@ name.
 Groonga CloudSearch doesn't work as a cloud service but may work as it
 in the future.
 
-## What language processor is used?
+## What language processor is used? {#language-processor}
 
 Groonga CloudSearch uses [node.js](http://nodejs.org/).
 
-## What full text search engine is used?
+## What full text search engine is used? {#search-engine}
 
 Groonga CloudSearch uses [groonga](http://groonga.org/) as full text
 search engine. Groonga is an open source fast full text search
@@ -53,7 +53,7 @@ engine. It supports real-time search without slowing down search
 throughput. It means that you can update your data without slowing
 down search performance and search the updated data at once.
 
-## Is Groonga CloudSearch 100% compatible Amazon CloudSearch API?
+## Is Groonga CloudSearch 100% compatible Amazon CloudSearch API? #{#api-compatibility}
 
 No. Groonga CloudSearch doesn't provide 100% compatible API yet.  It
 just provides only a few impotant APIs. See [functional comparison
@@ -63,7 +63,7 @@ Groonga CloudSearch will provide 100% compatible Amazon CloudSearch
 API in the future. Join our [community](../community/) to implement
 open source full text search service!
 
-## How to contribute?
+## How to contribute? {#how-to-contribute}
 
 Groonga CloudSearch is developed on GitHub. Please use GitHub style
 contirbution:
