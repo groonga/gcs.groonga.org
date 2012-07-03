@@ -4,8 +4,8 @@ layout: default
 ---
 # Documentation
 
- * [Amazon CloudSearch Developer Guide](http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/):
-   This is the official document of the Amazon CloudSearch, including tutorials and API references.
+## About Groonga CloudSearch
+
  * [FAQ](faq/):
    Frequently asked questions about Groonga CloudSearch.
  * [Install](install/):
@@ -14,3 +14,8 @@ layout: default
    The document to get started with Groonga CloudSearch.
  * [Restictions](restrictions/):
    The document about the current restrictions of Groonga CloudSearch.
+
+## About Amazon CloudSaerch
+
+ * [Amazon CloudSearch Developer Guide](http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/):
+   This is the official document of the Amazon CloudSearch, including tutorials and API references.
