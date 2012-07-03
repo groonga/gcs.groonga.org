@@ -19,7 +19,9 @@ layout: default
 
 ## CentOS
 
-    sudo yum install groonga
-    # How to install npm?
+    sudo rpm -ivh http://nodejs.tchol.org/repocfg/el/nodejs-stable-release.noarch.rpm
+    sudo rpm -ivh http://packages.groonga.org/centos/groonga-release-1.1.0-0.noarch.rpm
+    sudo yum makecache
+    sudo yum install -y groonga-devel nodejs-compat-symlinks npm
     sudo npm install -g gcs
     gcs
