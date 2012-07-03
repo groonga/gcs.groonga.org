@@ -8,7 +8,7 @@ layout: default
 Groonga CloudSearch can be installed easily on the following platforms:
 
 * [Mac OS X](#mac-os-x)
-* [CentOS 5/6](#centos)
+* [CentOS 6](#centos)
 * [Ubuntu 12.04 LTS (Precise Pangolin)](#ubuntu)
 
 How to install on [other platforms](#others) is described at the last.
@@ -32,7 +32,9 @@ the following command:
 
 If you got 1.0.0, Groonga CloudSearch is installed successfully! Yey!
 
-## CentOS 5/6 {#centos}
+## CentOS 6 {#centos}
+
+(CentOS 5 isn't supported because Python 2.5 or later is required.)
 
 There are yum repositories that provide softwares required by Groonga
 CloudSearch. Here are instructions to install required softwares:
