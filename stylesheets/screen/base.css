@@ -166,3 +166,8 @@ table .functional-ng {
   height: 149px;
   width: 149px;
 }
+
+a[rel="lightbox"] {
+  display: block;
+  text-align: center;
+}
