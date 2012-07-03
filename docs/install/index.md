@@ -82,7 +82,7 @@ Install GPG key for the apt repository:
 
 Install required softwares:
 
-    sudo apt-get install -y libgroonga-dev npm make
+    sudo apt-get install -y libgroonga-dev npm make g++ pkg-config
 
 Install Groonga CloudSearch:
 
