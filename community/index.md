@@ -17,6 +17,11 @@ layout: default
    And, [the wiki of this project](https://github.com/groonga/gcs/wiki) is also available.
    There are the roadmap, documents to start to develop the Groonga CloudSearch itself, etc.
 
+## Facebook
+
+* [Groonga CloudSearch](https://www.facebook.com/GroongaCloudSearch):
+  The facebook page for Groonga CloudSearch. Announcements from Groonga CloudSearch team will be posted here.
+
 ## Mailing List
 
  * [groonga's mailing list](http://groonga.org/docs/community.html):
