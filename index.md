@@ -21,8 +21,8 @@ style: screen/home.css
   <h2>More Resources</h2>
   <ul>
     <li><a href="/docs/">Documentation</a></li>
-    <li><a href="/blog/">Blog (News Topics)</a></li>
     <li><a href="/community/">Community</a></li>
+    <li><a href="/blog/">Blog (News Topics)</a></li>
   </ul>
 </section>
 
