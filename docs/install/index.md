@@ -47,7 +47,7 @@ Add yum repositories for Node.js and [groonga](../faq/#search-engine):
 
 Install required softwares:
 
-    sudo yum install -y groonga-devel nodejs-compat-symlinks npm
+    sudo yum install -y groonga-devel nodejs-compat-symlinks npm make
 
 Install Groonga CloudSearch:
 
