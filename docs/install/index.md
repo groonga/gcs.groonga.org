@@ -21,7 +21,7 @@ extract it. You don't need to install Xcode and so on.
     curl -O http://packages.groonga.org/macosx/gcs/gcs-1.0.0.tar.gz
     tar xvzf gcs-1.0.0.tar.gz
 
-You have `gcs` command that starts Groonga CloudSearch servile in
+You have `gcs` command that starts Groonga CloudSearch service in
 `gcs-1.0.0/` directory.
 
 To confirm that Groonga ClouldSearch is installed successfully, type
@@ -51,7 +51,7 @@ Install Groonga CloudSearch:
 
     sudo npm install -y -g gcs
 
-You have `gcs` command that starts Groonga CloudSearch servile in
+You have `gcs` command that starts Groonga CloudSearch service in
 `/usr/bin/` directory.
 
 To confirm that Groonga ClouldSearch is installed successfully, type
@@ -109,7 +109,7 @@ command after you install Node.js:
 
     sudo npm install -y -g gcs
 
-You have `gcs` command that starts Groonga CloudSearch servile.
+You have `gcs` command that starts Groonga CloudSearch service.
 
 To confirm that Groonga ClouldSearch is installed successfully, type
 the following command:
