@@ -20,7 +20,7 @@ layout: default
 ## Facebook
 
 * [Groonga CloudSearch](https://www.facebook.com/GroongaCloudSearch):
-  The facebook page for Groonga CloudSearch. Announcements from Groonga CloudSearch team will be posted here.
+  The facebook page for Groonga CloudSearch. Announcements from Groonga CloudSearch Project will be posted here.
 
 ## Mailing List
 
