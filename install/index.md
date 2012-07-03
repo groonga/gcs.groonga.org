@@ -1,4 +1,5 @@
 ---
+title: Install
 layout: default
 ---
 
