@@ -19,13 +19,13 @@ layout: default
 
 ## Blog
 
-* [Groonga CloudSearch Blog](/blog):
-  The official blog. Official announcements from Groonga CloudSearch Project will be posted here.
+ * [Groonga CloudSearch Blog](/blog):
+   The official blog. Official announcements from Groonga CloudSearch Project will be posted here.
 
 ## Facebook
 
-* [Groonga CloudSearch](https://www.facebook.com/GroongaCloudSearch):
-  The facebook page for Groonga CloudSearch. Announcements from Groonga CloudSearch Project will be posted here.
+ * [Groonga CloudSearch](https://www.facebook.com/GroongaCloudSearch):
+   The facebook page for Groonga CloudSearch. Announcements from Groonga CloudSearch Project will be posted here.
 
 ## Mailing List
 
