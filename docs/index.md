@@ -10,6 +10,9 @@ layout: default
 
 [Tutorial](tutorial/) showes Groonga CloudSearch introduction.
 
+[Functional comparison table](/#functional-comparison) shows not
+implemented Amazon CloudSearch API by Groonga CloudSearch.
+
 [Restictions](restrictions/) lists the current restrictions
 restrictions of Groonga CloudSearch.
 
