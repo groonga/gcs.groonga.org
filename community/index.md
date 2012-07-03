@@ -4,32 +4,56 @@ layout: default
 ---
 # Community
 
+Groonga CloudSearch is an open source and community based Amazon
+CloudSearch implementation. You can share knowledges and problems
+about Groonga CloudSearch with other users and developers. You can
+also join Groonga CloudSearch development to resolve your problems.
+There are many places where you can communicate on the internet.
+
 ## GitHub
 
- * [groonga/gcs](https://github.com/groonga/gcs):
-   The main repository of the Groonga CloudSearch.
-   Bugs and requests are managed on [the issue tracker for this project](https://github.com/groonga/gcs/issues).
-   And, [the wiki of this project](https://github.com/groonga/gcs/wiki) is also available.
-   There are the roadmap, documents to start to develop the Groonga CloudSearch itself, etc.
+[groonga/gcs](https://github.com/groonga/gcs) is the repository of
+Groonga CloudSearch.
 
-## Blog
+If you find a bug or have a feature request, submit it to [the issue
+tracker on GitHub](https://github.com/groonga/gcs/issues). Pull
+request is also welcome.
 
- * [Groonga CloudSearch Blog](/blog):
-   The official blog. Official announcements from Groonga CloudSearch Project will be posted here.
+[The Wiki on GitHub](https://github.com/groonga/gcs/wiki) is used for
+developers. There are the roadmap, documents to start to develop the
+Groonga CloudSearch itself and so on.
 
-## Facebook
-
- * [Groonga CloudSearch](https://www.facebook.com/GroongaCloudSearch):
-   The facebook page for Groonga CloudSearch. Announcements from Groonga CloudSearch Project will be posted here.
+[groonga/gcs.groonga.org](https://github.com/groonga/gcs.groonga.org)
+is the repository of http://gcs.groonga.org/.
 
 ## Mailing List
 
- * [groonga's mailing list](http://groonga.org/docs/community.html):
-   Because the Groonga CloudSearch was started as a sub project of the [groonga project](http://groonga.org/),
-   they have strong relationship. Most members of this project are active on the groonga's mailing list too.
+The [groonga-talk mailing
+list](https://lists.sourceforge.net/lists/listinfo/groonga-talk) is
+used for announcements and discussion about Groonga CloudSearch. You
+can use it to get the latest information about Groonga CloudSearch and
+ask your problems.
+
+Note that the mailing list is also used for
+[groonga](../docs/faq/#search-engine). So you will receive mails that
+doesn't talk about Groonga CloudSearch.
+
+## Blog
+
+[Groonga CloudSearch Blog](/blog/) announces about Groonga CloudSearch
+related information. To get the latest information about Groonga
+CloudSearch, subscribe the blog. You can comment to each post via
+Facebook.
+
+## Facebook
+
+[Groonga CloudSearch Faceboock
+page](https://www.facebook.com/GroongaCloudSearch) also announces
+about Groonga CloudSearch related information. You can also use the
+page to share your Groonga CloudSearch related information.
 
 ## Twitter
 
- * [@groonga](https://twitter.com/groonga):
-   The official account of the [groonga project](http://groonga.org).
-   Groonga CloudSearch also uses this account.
+[@groonga](https://twitter.com/groonga) also announces about Groonga
+CloudSearch related information. You can mention to it to ask Groonga
+CloudSearch related questions.
