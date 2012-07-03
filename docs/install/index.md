@@ -88,7 +88,7 @@ Install Groonga CloudSearch:
 
     sudo npm install -y -g gcs
 
-You have `gcs` command that starts Groonga CloudSearch servile in
+You have `gcs` command that starts Groonga CloudSearch service in
 `/usr/local/bin/` directory.
 
 To confirm that Groonga ClouldSearch is installed successfully, type
