@@ -11,16 +11,16 @@ style: screen/home.css
      compatible open source full text search service.</p>
 
   <div id="featured">
-    <p id="install"><a href="install/">Install</a></p>
-    <p id="tutorial"><a href="tutorial/">Tutorial</a></p>
+    <p id="install"><a href="docs/install/">Install</a></p>
+    <p id="tutorial"><a href="docs/tutorial/">Tutorial</a></p>
   </div>
 </section>
 
 
-<section id="more-documents">
-  <h2>More Documents</h2>
+<section id="more-resources">
+  <h2>More Resources</h2>
   <ul>
-    <li><a href="/faq/">FAQ</a></li>
+    <li><a href="/docs/">Documentation</a></li>
     <li><a href="/blog/">Blog (News Topics)</a></li>
     <li><a href="/community/">Community</a></li>
   </ul>
