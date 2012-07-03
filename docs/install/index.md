@@ -107,7 +107,7 @@ bundled in Node.js. To install Node.js on your platform, see [install
 document for Node.js](http://nodejs.org/#download). Type the following
 command after you install Node.js:
 
-   sudo npm install -y -g gcs
+    sudo npm install -y -g gcs
 
 You have `gcs` command that starts Groonga CloudSearch servile.
 
