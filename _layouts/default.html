@@ -22,6 +22,9 @@
     {% include facebook-sdk.html %}
     <h1 id="global-heading"><a href="/">Groonga CloudSearch</a></h1>
     {{ content }}
+    {% unless page.is_blog %}
+    <div class="fb-like" data-href="https://www.facebook.com/GroongaCloudSearch" data-send="false" data-width="450" data-show-faces="true"></div>
+    {% endunless %}
     <nav>
       <ul>
         <li><a href="/docs/">Documentation</a></li>
