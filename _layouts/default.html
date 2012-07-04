@@ -17,6 +17,7 @@
     <meta property="og:image" content="{{ site.url }}/images/gcs-icon-full-size.png" />
     <meta property="og:site_name" content="Groonga CloudSearch" />
     <meta property="og:url" content="{{ site.url }}{{ page.url | remove:'index.html' }}" />
+    {% if page.description %}<meta property="og:description" content="{{ page.description }}" />{% endif %}
   </head>
   <body{% if page.id %} id="page-{{ page.id }}"{% endif %}>
     {% include facebook-sdk.html %}
