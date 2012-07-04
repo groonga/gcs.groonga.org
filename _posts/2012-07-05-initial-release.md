@@ -12,7 +12,7 @@ Amazon CloudSearch provides ability to index and search various documents on the
 
 <a href="/images/architecture-trad-vs-acs-large.png" rel="lightbox"><img src="/images/architecture-trad-vs-acs-small.png" alt="(Figure 1: Legacy Web Apps v.s. Web Apps with Amazon CloudSearch)" /></a>
 
-However, there are two issues. First, you have to learn about how to use APIs of the Amazon CloudSearch, from [the documents](http://aws.amazon.com/documentation/cloudsearch/). Second, it is a fee-based online service, so you have to pay money to try any feature - even if you just want to learn the API. So, you possibly think that it is hard to be tried.
+However, there are two issues. First, you have to learn about how to use APIs of the Amazon CloudSearch, from [the documents](http://aws.amazon.com/documentation/cloudsearch/). Second, it is a fee-based online service, so you have to pay money to try any features - even if you just want to learn the API. So, you possibly think that it is hard to be tried.
 
 ### How the Groonga CloudSearch helps you?
 
