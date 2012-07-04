@@ -27,15 +27,13 @@ your application that uses Aamazon CloudSearch API.
 You will get your Amazon CloudSearch API on your computer after
 this tutorial.
 
-This tutorial describes only three important APIs:
+This tutorial describes how to search documents and how to register
+documents. First, searching is described because you will be
+interested in searching rather than registering.
 
-1. Simple search API
-2. Creating search domain API
-3. Creating text field API
-
-The simple search API is described with sample data provided by
-Groonga CloudSearch. So you don't need to care about _search domain_
-and _text field_. They are described later.
+Searching is described with example documents provided by Groonga
+CloudSearch. So you don't need to care about registering. It is
+described later.
 
 ## Prepare test environment
 
@@ -62,7 +60,7 @@ domain` is corresponding table in RDBMS. A `search domain` has
 documents like a table in RDBMS has records.
 
 See also: [`search domain` in Amazon CloudSearch
-Glossary](http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/Glossary.html#searchdomain)
+Glossary - Amazon CloudSearch](http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/Glossary.html#searchdomain)
 
 In this tutorial, `example` is used as the sample search domain name.
 
@@ -74,7 +72,7 @@ are endpoint host name formats:
 
 `DOMAIN_NAME` is search domain name. `DOMAIN_ID` is search domain ID.
 
-See also: [Endpoints for Amazon
+See also: [Endpoints for Amazon CloudSearch - Amazon
 CloudSearch](http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/endpoints.html)
 
 Groonga CloudSearch uses the following endpoint host name formats:
@@ -96,38 +94,30 @@ names to your `/etc/hosts`:
 Type the following command to confirm endpoint host names can be
 resolved:
 
-    $ host search-example-00000000000000000000000000.localhost
-    $ host doc-example-00000000000000000000000000.localhost
+    $ ping -c 1 search-example-00000000000000000000000000.localhost
+    PING search-example-00000000000000000000000000.localhost (127.0.0.1) 56(84) bytes of data.
+    64 bytes from localhost (127.0.0.1): icmp_req=1 ttl=64 time=0.030 ms
+    ...
+    $ ping -c 1 doc-example-00000000000000000000000000.localhost
+    PING doc-example-00000000000000000000000000.localhost (127.0.0.1) 56(84) bytes of data.
+    64 bytes from localhost (127.0.0.1): icmp_req=1 ttl=64 time=0.020 ms
+    ...
 
-...HERE...
+### Start Groonga CloudSearch service
 
-
-Install Groonga Cloudsearch following [install instructions](../install/).
-
-## Setup /etc/hosts
-
-Groonga CloudSearch requires name-based virtualhosts configured. These commands will add configurations to the domain "example". Run these commands on the terminal:
-
-    $ sudo sh -c 'echo "127.0.0.1 doc-example-00000000000000000000000000.localhost" >> /etc/hosts'
-    $ sudo sh -c 'echo "127.0.0.1 search-example-00000000000000000000000000.localhost" >> /etc/hosts'
-
-<img src="configure-hosts.png" alt="configuring /etc/hosts" width="100%" />
-
-Note: A _domain_ encapsulates the data and search instances. See [Amazon CloudSearch Glossary - Amazon CloudSearch](http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/Glossary.html#searchdomain) for details.
-
-## Start GCS server
-
-You need to start GCS server. Run gcs command:
+Run Groonga CloudSearch service by `gcs` command:
 
     $ gcs
 
-<img src="gcs-started.png" alt="gcs server started" width="100%" />
+Groonga CloudSearch service listens at
+[http://localhost:7575/](http://localhost:7575/) by default.
 
-GCS server will listen at http://127.0.0.1:3000/.
+### Import example documents
 
-## Import example data
-
-You can import example data into GCS with gcs-import-examples command. Use another terminal and execute the following command:
+Import example documents for simple search API by
+`gcs-import-examples` command because search API is described before
+document registration API. Use another terminal and execute the following
+command:
 
     $ gcs-import-examples
 
@@ -138,19 +128,155 @@ Hit enter to start importing.
 
 <img src="gcs-import-examples-finished.png" alt="gcs-import-examples finished" width="100%" />
 
+OK. Test environment is prepared. Let's try search API.
 
-## Search documents
+## How to search documents
 
-Now you can search the documents. Open http://127.0.0.1:3000/ with your browser.
- Try 'tokyo' as a query.
+Simple search API is used for searching documents. Groonga CloudSearch
+also provides dashbord Web page at
+[http://localhost:7575/](http://localhost:7575/).
+
+Open [http://localhost:7575/](http://localhost:7575/) to try simple
+search API. Input `tokyo` to text field and press `Search` button! You
+will get documents that have `tokyo` keyword in content.
 
 <img src="web-ui.png" alt="searching 'tokyo' with web UI" width="100%" />
 
-Now you can see the URL corresponding the query on the web interfece.
-When opened, you will see the response body.
+There is the API URL corresponding to the query in the search page.
+To see raw response body in JSON, open the API URL.
 
 <img src="json-search-response.png" alt="JSON search response" width="100%" />
 
+The API URL just has `q` parameter. `q` parameter means that searching
+documents that have query string (`q` parameter value) in the default
+search fields. The default search fields are all text fields by
+default.
+
+See also: [Searching the Default Search Field in Amazon CloudSearch -
+Amazon
+CloudSearch](http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/simplesearches.html)
+
+See [Search Response - Amazon
+CloudSearch](http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/Search.Response.html)
+for returned JSON format.
+
+### Restrictions
+
+Groonga CloudSearch only supports `q` parameter for now. Other
+parameters such as `start` and `size` will be supported in the future
+release.
+
+See also: [Search Requests - Amazon
+CloudSearch](http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/Search.Requests.html)
+for all parameters.
+
+## How to register documents
+
+The above section describes how to search documents. The below
+sections describe how to register your documents.
+
+### Configuration API
+
+You need to create search domain and text fields before registering
+documents. Configuration API is used for them. This section describes
+how to create a search domain.
+
+Confiugration API is for creating, configureing and managing search
+domains. Configuration API requires `Action` parameter and `Version`
+parameter. `Version` parameter must be `2011-02-01` for all
+configuration API.
+
+See also: [Amazon CloudSearch Configuration API Reference - Amazon
+CloudSearch](http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/ConfigAPI.html).
+
+Configuration API requires authentication but Groonga CloudSearch
+doesn't implement it yet. You can omit authentication related
+parameters.
+
+See also: [Request Authentication - Amazon
+CloudSearch](http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/requestauth.html)
+for details.
+
+### Creating search domain API
+
+To create a new search domain, `CreateDomain` is specified as `Action`
+parameter. `CreateDomain` action requires `DomainName` parameter. Its
+value must be a new search domain name to be created.
+
+Here is an API request to create `address` search domain:
+
+    $ curl -s "http://localhost:7575/?DomainName=address&Action=CreateDomain&Version=2011-02-01"
+
+See also: [CreateDomain - Amazon
+CloudSearch](http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/API_CreateDomain.html)
+for details.
+
+### Defining index field API
+
+To define a new index field for the search domain, `DefineIndexField`
+is specified as `Action` parameter. `DefineIndexField` action requires
+`DomainName` parameter and `IndexField.IndexFieldName`
+parameter. `DomainName` parameter value must be the target search
+domain name. `IndexField.IndexFieldName` value must be a new index
+field name to be defined.
+
+Here is an API request to define `name` index field to `address`
+search domain:
+
+    $ curl -s "http://localhost:7575/?Action=DefineIndexField&DomainName=address&IndexField.IndexFieldName=name&Version=2011-02-01"
+
+See also: [DefineIndexField - Amazon
+CloudSearch](http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/API_DefineIndexField.html)
+for details.
+
+### Registering documents API
+
+To register documents, Document Service API is used. Here is endpoint
+host name format of Document Service API on Groonga CloudSearch:
+
+* `doc-DOMAIN_NAME-00000000000000000000000000.localhost`
+
+Post documents in SDF JSON representation to the endpoint. SDF is
+acronym of Search Data Format. Here is a sample SDF JSON
+representation:
+
+    [
+      {
+        "type": "add",
+        "id": "id1",
+        "version": 1,
+        "lang": "en",
+        "fields": {
+          "name": "Brazil"
+        }
+      },
+      {
+        "type": "add",
+        "id": "id2",
+        "version": 1,
+        "lang": "en",
+        "fields": {
+          "name": "Enishi Tech Inc."
+        }
+      }
+    ]
+
+See also: [documents/batch JSON API - Amazon
+CloudSearch](http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/DocumentsBatch.JSON.html)
+for details of SDF JSON representation.
+
+Here is an API request to register documents that are stored in
+`addresses.sdf.json` to `address` search domain:
+
+    $ curl -X POST --upload-file addresses.sdf.json --header "Content-Type: application/json" http://doc-example-00000000000000000000000000.localhost:7575/2011-02-01/documents/batch
+
+See also: [documents/batch JSON API - Amazon
+CloudSearch](http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/DocumentsBatch.JSON.html#DocumentsBatch.JSON.ResponseProperties)
+for details of response.
+
+Now, you can search registered documents! Yay!
+
 ## Next step
 
-To learn how to index the documents, [the source code of gcs-import-examples](https://github.com/groonga/gcs/blob/master/bin/gcs-import-examples) will help you.
+Join our [Community](/community/) and share your requests, problems
+and so on!
