@@ -20,8 +20,9 @@ tracker on GitHub](https://github.com/groonga/gcs/issues). Pull
 request is also welcome.
 
 [The Wiki on GitHub](https://github.com/groonga/gcs/wiki) is used for
-developers. There are the roadmap, documents to start to develop the
-Groonga CloudSearch itself and so on.
+developers. There are [the
+roadmap](https://github.com/groonga/gcs/wiki/Roadmap), documents to
+start to develop Groonga CloudSearch itself and so on.
 
 [groonga/gcs.groonga.org](https://github.com/groonga/gcs.groonga.org)
 is the repository of http://gcs.groonga.org/.
