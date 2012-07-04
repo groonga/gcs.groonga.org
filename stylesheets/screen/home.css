@@ -52,13 +52,34 @@ h1#global-heading {
 }
 
 #featured {
+  background: rgba(0, 0, 0, 0.3);
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+  -moz-box-shadow: black 0 0 0.3em;
+  -webkit-box-shadow: black 0 0 0.3em;
+  box-shadow: black 0 0 0.3em;
   line-height: 1;
-  text-align: right;
+  margin-left: auto;
+  padding: 0.8em 0;
+  text-align: center;
+  width: 21em;
 }
 
 #featured p {
   display: inline-table;
   margin-left: 1em;
+}
+
+#featured #version {
+  display: block;
+  font-size: 90%;
+  margin: 0 0 0.5em;
+  padding: 0;
+}
+
+#featured #release-date {
+  font-size: 80%;
 }
 
 #featured a {
@@ -89,6 +110,10 @@ h1#global-heading {
   -moz-box-shadow: #D9F3FF 0 0 0.8em;
   -webkit-box-shadow: #D9F3FF 0 0 0.8em;
   box-shadow: #D9F3FF 0 0 0.8em;
+}
+
+#featured #install {
+  margin-left: 0;
 }
 
 #featured #install a {
