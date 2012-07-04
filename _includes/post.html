@@ -9,4 +9,8 @@
   {% endif %}
   <p>{{ post.date | date: '%Y-%m-%d' }}</p>
 </div>
-{{ post.content }}
+{% if page.is_index %}
+  {{ post.content }}
+{% else %}
+  {{ content }}
+{% endif %}
