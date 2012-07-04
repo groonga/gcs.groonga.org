@@ -22,9 +22,6 @@
     {% include facebook-sdk.html %}
     <h1 id="global-heading"><a href="/">Groonga CloudSearch</a></h1>
     {{ content }}
-    {% unless page.is_blog %}
-    <div class="fb-like" data-href="https://www.facebook.com/GroongaCloudSearch" data-send="false" data-width="450" data-show-faces="true"></div>
-    {% endunless %}
     <nav>
       <ul>
         <li><a href="/docs/">Documentation</a></li>
@@ -36,6 +33,9 @@
       <p id="fork-me"><a href="http://github.com/groonga/gcs" title="Fork me on GitHub">Fork me on GitHub</a></p>
       <p>&copy;2012 Groonga CloudSearch Project.</p>
       <p>Groonga CloudSearch aka GCS is released under the <a href="http://www.opensource.org/licenses/MIT">MIT License</a>.</p>
+      {% unless page.is_blog %}
+        <div class="fb-like" data-href="https://www.facebook.com/GroongaCloudSearch" data-send="false" data-width="450" data-show-faces="true"></div>
+      {% endunless %}
     </footer>
     <script src="/stylesheets/lightbox/js/jquery-1.7.2.min.js"></script>
     <script src="/stylesheets/lightbox/js/jquery-ui-1.8.18.custom.min.js"></script>
