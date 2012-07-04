@@ -27,7 +27,7 @@ start to develop Groonga CloudSearch itself and so on.
 [groonga/gcs.groonga.org](https://github.com/groonga/gcs.groonga.org)
 is the repository of http://gcs.groonga.org/.
 
-## Mailing List
+## <img src="/images/mail-32.png" alt="" />Mailing List
 
 The [groonga-talk mailing
 list](https://lists.sourceforge.net/lists/listinfo/groonga-talk) is
@@ -39,7 +39,7 @@ Note that the mailing list is also used for
 [groonga](../docs/faq/#search-engine). So you will receive mails that
 doesn't talk about Groonga CloudSearch.
 
-## Blog
+## <img src="/images/blog-32.png" alt="" />Blog
 
 [Groonga CloudSearch Blog](/blog/) announces about Groonga CloudSearch
 related information. To get the latest information about Groonga
