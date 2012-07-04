@@ -1,6 +1,7 @@
 ---
 title: Groonga CloudSearch blog
 layout: default
+style: screen/blog.css
 is_index: true
 is_blog: true
 ---

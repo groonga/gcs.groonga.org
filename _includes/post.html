@@ -1,9 +1,10 @@
 {% unless page.is_index %}
   {% assign post = page %}
 {% endunless %}
+<section class="blog-entry">
 <div class="header">
   <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-  <p>{{ post.date | date: '%Y-%m-%d' }}</p>
+  <p class="post-date">{{ post.date | date: '%Y-%m-%d' }}</p>
   <div class="fb-like" data-href="{{ site.url }}{{ post.url }}" data-send="false" data-width="450" data-show-faces="true"></div>
 </div>
 {% if page.is_index %}
@@ -11,3 +12,4 @@
 {% else %}
   {{ content }}
 {% endif %}
+</section>

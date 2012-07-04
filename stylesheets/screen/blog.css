@@ -1,0 +1,51 @@
+.blog-entry {
+  position: relative;
+}
+
+.blog-entry h2 {
+  margin-right: 7em;
+}
+
+.post-date {
+  background: #384656; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #384656 31%, #788ba0 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(31%,#384656), color-stop(100%,#788ba0)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg, #384656 31%,#788ba0 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg, #384656 31%,#788ba0 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg, #384656 31%,#788ba0 100%); /* IE10+ */
+  background: linear-gradient(135deg, #384656 31%,#788ba0 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#384656', endColorstr='#788ba0',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  border: 0 none;
+  -moz-border-radius: 0 0.5em 0.25em 0;
+  -webkit-border-radius: 0 0.25em 0.25em 0;
+  -o-border-radius: 0 0.25em 0.25em 0;
+  -ms-border-radius: 0 0.25em 0.25em 0;
+  border-radius: 0 0.25em 0.25em 0;
+  -moz-box-shadow: #3A647C 0.1em 0.1em 0.3em;
+  box-shadow: #3A647C 0.1em 0.1em 0.3em;
+  color: white;
+  font-size: 90%;
+  height: 16px;
+  line-height: 1;
+  margin: 0;
+  padding: 8px 16px;
+  position: absolute;
+  right: -24px;
+  text-shadow: #0A344C 0.1em 0.1em 0.2em,
+               #0A344C 0 0 0.5em;
+  top: 0;
+}
+
+.post-date:before {
+  border: 0 solid transparent;
+  border-width: 16px 16px 16px 0;
+  border-right-color: #384656;
+  content: "";
+  display: block;
+  height: 0;
+  line-height: 0;
+  left: -16px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+}
