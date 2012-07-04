@@ -10,7 +10,7 @@ about Groonga CloudSearch with other users and developers. You can
 also join Groonga CloudSearch development to resolve your problems.
 There are many places where you can communicate on the internet.
 
-## GitHub
+## <img src="/images/github-octocats-32.png" alt="" />GitHub
 
 [groonga/gcs](https://github.com/groonga/gcs) is the repository of
 Groonga CloudSearch.
@@ -46,14 +46,14 @@ related information. To get the latest information about Groonga
 CloudSearch, subscribe the blog. You can comment to each post via
 Facebook.
 
-## Facebook
+## <img src="/images/facebook-32.png" alt="" />Facebook
 
 [Groonga CloudSearch Faceboock
 page](https://www.facebook.com/GroongaCloudSearch) also announces
 about Groonga CloudSearch related information. You can also use the
 page to share your Groonga CloudSearch related information.
 
-## Twitter
+## <img src="/images/twitter-32.png" alt="" />Twitter
 
 [@groonga](https://twitter.com/groonga) also announces about Groonga
 CloudSearch related information. You can mention to it to ask Groonga
