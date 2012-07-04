@@ -8,7 +8,7 @@ Today we shipped the initial release of "Groonga CloudSearch". By the Groonga Cl
 
 ### What's the Amazon CloudSearch?
 
-It provides ability to index and search various documents on the cloud. You can upload documents and get the search result as JSON resources via its Web API. So, you can build Web apps easily, without setting up your custom search system (Solr, etc.) - instead you can use the Amazon CloudSearch as its back-end.
+Amazon CloudSearch provides ability to index and search various documents on the cloud. You can upload documents and get the search result as JSON resources via its Web API. So, you can build Web apps easily, without setting up your custom search system (Solr, etc.) - instead you can use the Amazon CloudSearch as its back-end.
 
 <a href="/images/architecture-trad-vs-acs-large.png" rel="lightbox"><img src="/images/architecture-trad-vs-acs-small.png" alt="(Figure 1: Legacy Web Apps v.s. Web Apps with Amazon CloudSearch)" /></a>
 
