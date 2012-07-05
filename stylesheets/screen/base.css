@@ -251,11 +251,11 @@ pre {
 }
 
 #fork-me a {
-  background: url("http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png") no-repeat;
+  background: url("http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png") no-repeat top right;
   color: transparent;
   display: block;
-  height: 149px;
-  width: 149px;
+  height: 141px;
+  width: 141px;
 }
 
 a[rel="lightbox"] {
