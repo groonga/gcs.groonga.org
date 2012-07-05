@@ -15,6 +15,23 @@ as how to start Amazon CloudSearch service and how much payment will
 be caused for your application. See [Amazon CloudSearch
 page](http://aws.amazon.com/cloudsearch/) about them.
 
+ * [Summary](#summary)
+ * [Prepare test environment](#prepare_test_environment)
+   * [Install Groonga CloudSearch](#install_groonga_cloudsearch)
+   * [Register example search domain](#register__search_domain)
+   * [Start Groonga CloudSearch service](#start_groonga_cloudsearch_service)
+   * [Import example documents](#import_example_documents)
+ * [How to search documents](#how-to-search-documents)
+   
+   * [Restrictions](#restrictions)
+ * [How to register documents](#how-to-register-documents)
+   * [Configuration API](#configuration_api)
+   * [Creating search domain API](#creating_search_domain_api)
+   * [Registering endpoint host names](#registering_endpoint_host_names)
+   * [Defining index field API](#defining_index_field_api)
+   * [Registering documents API](#registering_documents_api)
+ * [Next step](#next_step)
+
 ## Summary
 
 Groonga CloudSearch is an Amazon CloudSearch compatible open source

@@ -104,6 +104,14 @@ ul li:before {
   top: 0.5em;
 }
 
+ul li p:first-child,
+ul ul {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
 
 nav {
   font-size: 90%;

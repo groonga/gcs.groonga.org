@@ -5,6 +5,14 @@ layout: default
 
 # FAQ
 
+ * [Why Groonga CloudSearch development is started?](#why-started)
+ * [Does Groonga CloudSearch work in the cloud?](#work-in-the-cloud)
+ * [Why Groonga CloudSearch has “Cloud” in its name?](#why-cloud-in-name)
+ * [What language processor is used?](#language-processor)
+ * [What full text search engine is used?](#search-engine)
+ * [Is Groonga CloudSearch 100% compatible Amazon CloudSearch API?](#api-compatibility)
+ * [How to contribute?](#how-to-contribute)
+
 ## Why Groonga CloudSearch development is started? {#why-started}
 
 It's for development.
