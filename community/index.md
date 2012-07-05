@@ -92,7 +92,7 @@ CloudSearch related questions.
 
 <h2 id="facebook"><img alt="" src="/images/facebook-32.png" />Facebook</h2>
 
-<p><a href="https://www.facebook.com/GroongaCloudSearch">Groonga CloudSearch Faceboock page</a> also announces about Groonga CloudSearch related information. You can also use the page to share your Groonga CloudSearch related information.</p>
+<p><a href="https://www.facebook.com/GroongaCloudSearch">Groonga CloudSearch Facebook page</a> also announces about Groonga CloudSearch related information. You can also use the page to share your Groonga CloudSearch related information.</p>
 
 <h2 id="twitter"><img alt="" src="/images/twitter-32.png" />Twitter</h2>
 
