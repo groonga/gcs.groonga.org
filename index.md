@@ -149,6 +149,10 @@ description: Groonga CloudSearch is an Amazon CloudSearch compatible open source
     <td class="functional-ng">&#x2715;</td><td class="functional-ok">&#x2713;</td>
   </tr>
   <tr>
+    <td>Works locally</td>
+    <td class="functional-ok">&#x2713;</td><td class="functional-ng">&#x2715;</td>
+  </tr>
+  <tr>
     <td>Works in the cloud</td>
     <td class="functional-ok">&#x2713;</td><td class="functional-ok">&#x2713;</td>
   </tr>
@@ -158,10 +162,6 @@ description: Groonga CloudSearch is an Amazon CloudSearch compatible open source
   </tr>
   <tr>
     <td>Native CJK support (and better tokenizer)</td>
-    <td class="functional-ok">&#x2713;</td><td class="functional-ng">&#x2715;</td>
-  </tr>
-  <tr>
-    <td>Works locally</td>
     <td class="functional-ok">&#x2713;</td><td class="functional-ng">&#x2715;</td>
   </tr>
   </tbody>
