@@ -25,7 +25,7 @@ description: Groonga CloudSearch is an Amazon CloudSearch compatible open source
   <ul>
     <li><a href="/docs/">Documentation</a></li>
     <li><a href="/community/">Community</a></li>
-    <li><a href="/blog/">Blog (News Topics)</a></li>
+    <li><a href="/blog/">Blog</a></li>
   </ul>
 </section>
 
