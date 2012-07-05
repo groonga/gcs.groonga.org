@@ -5,7 +5,7 @@ layout: default
 # Tutorial
 
 This document describes how to use Groonga CloudSearch step by
-step. It's the goal of this document that you understand how to use
+step. The goal of this document is that you understand how to use
 Amazon CloudSearch compatible API and you can develop your application
 with Groonga CloudSearch. You don't need Amazon CloudSearch API
 related knowledge. This document describes it.
