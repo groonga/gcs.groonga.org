@@ -10,7 +10,7 @@ Amazon CloudSearch compatible API and you can develop your application
 with Groonga CloudSearch. You don't need Amazon CloudSearch API
 related knowledge. This document describes it.
 
-This document doesn't describe Amazon CloudSearch specific items such
+This document doesn't describe Amazon CloudSearch specific topics such
 as how to start Amazon CloudSearch service and how much payment will
 be caused for your application. See [Amazon CloudSearch
 page](http://aws.amazon.com/cloudsearch/) about them.
