@@ -91,6 +91,8 @@ names to your `/etc/hosts`:
 
     $ sudo gcs-register-hosts example
 
+<img src="gcs-register-hosts.png" alt="running gcs-register-hosts command" width="100%" />
+
 Type the following command to confirm endpoint host names can be
 resolved:
 
@@ -109,6 +111,8 @@ Run Groonga CloudSearch service by `gcs` command:
 
     $ gcs
 
+<img src="gcs-started.png" alt="gcs started" width="100%" />
+
 Groonga CloudSearch service listens at
 [http://localhost:7575/](http://localhost:7575/) by default.
 
@@ -121,10 +125,17 @@ command:
 
     $ gcs-import-examples
 
-<img src="gcs-import-examples.png" alt="starting gcs-import-examples command" width="100%" />
-<img src="gcs-import-examples-started.png" alt="gcs-import-examples command started" width="100%" />
+If you see
+
+<img src="gcs-import-examples-ok.png" alt="gcs-import-examples command started" width="100%" />
 
 Hit enter to start importing.
+
+If you need some action before start importing, you will see the instrucion like the screenshot below. Follow the instructions and run `gcs-import-examples` again.
+
+<img src="gcs-import-examples-error.png" alt="gcs-import-examples command started with error" width="100%" />
+
+When you hit the enter key, import will be started.
 
 <img src="gcs-import-examples-finished.png" alt="gcs-import-examples finished" width="100%" />
 
