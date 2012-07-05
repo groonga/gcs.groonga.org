@@ -12,7 +12,7 @@ It's for development.
 Full text search services in the cloud will be increased in the
 future. They will be provided as only service. You cannot use those
 services locally such as on your computer and in your local
-network. Nomally, you don't need to use those services locally. But
+network. Normally, you don't need to use those services locally. But
 there are some useful cases if you can use those services locally. One
 of them is development.
 
@@ -56,7 +56,7 @@ down search performance and search the updated data at once.
 ## Is Groonga CloudSearch 100% compatible Amazon CloudSearch API? #{#api-compatibility}
 
 No. Groonga CloudSearch doesn't provide 100% compatible API yet.  It
-just provides only a few impotant APIs. See [functional comparison
+just provides only a few important APIs. See [functional comparison
 table](../#functional-comparison) for list of implemented API.
 
 Groonga CloudSearch will provide 100% compatible Amazon CloudSearch
@@ -66,7 +66,7 @@ open source full text search service!
 ## How to contribute? {#how-to-contribute}
 
 Groonga CloudSearch is developed on GitHub. Please use GitHub style
-contirbution:
+contribution:
 
 1. Fork [groonga/gcs](https://github.com/groonga/gcs)
 2. (Develop)
