@@ -3,7 +3,7 @@ title: Groonga CloudSearch 1.0 is out!
 layout: post
 ---
 
-Today we shipped the initial release of "Groonga CloudSearch". By Groonga CloudSearch, you can try APIs of Amazon CloudSearch without paying any fee. It is made for all Web developers who are planning to build Web apps with Amazon CloudSearch. You can download the package and read the tutorial on [the home page of this project site](http://gcs.groonga.org/).
+Today we shipped the initial release of "Groonga CloudSearch". By Groonga CloudSearch, you can try Amazon CloudSearch API without paying any fee. It is made for all Web developers who are planning to build Web apps with Amazon CloudSearch. You can download the package and read the tutorial on [the home page of this project site](http://gcs.groonga.org/).
 
 
 ### What's Amazon CloudSearch?
@@ -12,7 +12,7 @@ Amazon CloudSearch provides ability to index and search various documents on the
 
 <a href="/images/architecture-trad-vs-acs-large.png" rel="lightbox"><img src="/images/architecture-trad-vs-acs-small.png" alt="(Figure 1: Legacy Web Apps v.s. Web Apps with Amazon CloudSearch)" /></a>
 
-However, there are two issues. First, you have to learn about how to use APIs of Amazon CloudSearch, from [the documents](http://aws.amazon.com/documentation/cloudsearch/). Secondly, it is a fee-based online service, so you have to pay money to try any features - even if you just want to learn the API. So, it may be hard to try the API.
+However, there are two issues. First, you have to learn about how to use Amazon CloudSearch API, from [the documents](http://aws.amazon.com/documentation/cloudsearch/). Secondly, it is a fee-based online service, so you have to pay money to try any features - even if you just want to learn the API. So, it may be hard to try the API.
 
 ### How Groonga CloudSearch helps you?
 
