@@ -57,7 +57,7 @@ down search performance and search the updated data at once.
 
 No. Groonga CloudSearch doesn't provide 100% compatible API yet.  It
 just provides only a few important APIs. See [functional comparison
-table](../#functional-comparison) for list of implemented API.
+table](/#functional-comparison) for list of implemented API.
 
 Groonga CloudSearch will provide 100% compatible Amazon CloudSearch
 API in the future. Join our [community](../community/) to implement
