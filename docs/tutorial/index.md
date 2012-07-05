@@ -27,9 +27,10 @@ your application that uses Amazon CloudSearch API.
 You will get your Amazon CloudSearch API on your computer after
 this tutorial.
 
-This tutorial describes how to search documents and how to register
-documents. First, searching is described because you will be
-interested in searching rather than registering.
+This tutorial describes [how to search
+documents](#how-to-search-documents) and [how to register
+documents](#how-to-register-documents). First, searching is described
+because you will be interested in searching rather than registering.
 
 Searching is described with example documents provided by Groonga
 CloudSearch. So you don't need to care about registering. It is
@@ -77,8 +78,8 @@ CloudSearch](http://docs.amazonwebservices.com/cloudsearch/latest/developerguide
 
 Groonga CloudSearch uses the following endpoint host name formats:
 
-* `search-DOMAIN_NAME-00000000000000000000000000.localhost`
-* `doc-DOMAIN_NAME-00000000000000000000000000.localhost`
+ * `search-DOMAIN_NAME-00000000000000000000000000.localhost`
+ * `doc-DOMAIN_NAME-00000000000000000000000000.localhost`
 
 `DOMAIN_NAME` is search domain name. Search domain ID is always
 `00000000000000000000000000` for now. It'll be replaced unique ID in
@@ -141,7 +142,7 @@ When you hit the enter key, import will be started.
 
 OK. Test environment is prepared. Let's try search API.
 
-## How to search documents
+## How to search documents {#how-to-search-documents}
 
 Simple search API is used for searching documents. Groonga CloudSearch
 also provides dashboard Web page at
@@ -181,7 +182,7 @@ See also: [Search Requests - Amazon
 CloudSearch](http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/Search.Requests.html)
 for all parameters.
 
-## How to register documents
+## How to register documents {#how-to-register-documents}
 
 The above section describes how to search documents. The below
 sections describe how to register your documents.
@@ -222,6 +223,35 @@ See also: [CreateDomain - Amazon
 CloudSearch](http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/API_CreateDomain.html)
 for details.
 
+### Registering endpoint host names
+
+To access the created search domain, you need to endpoint host names
+such as:
+
+ * `search-DOMAIN_NAME-00000000000000000000000000.localhost`
+ * `doc-DOMAIN_NAME-00000000000000000000000000.localhost`
+
+You can use `gcs-register-hosts` command to register those host names
+to `/etc/hosts` as you saw in [how to search
+documents](#how-to-search-documents) section.
+
+Here is a command to register endpoint host names for `address` search
+domain:
+
+    $ sudo gcs-register-hosts address
+
+Type the following command to confirm endpoint host names can be
+resolved:
+
+    $ ping -c 1 search-address-00000000000000000000000000.localhost
+    PING search-address-00000000000000000000000000.localhost (127.0.0.1) 56(84) bytes of data.
+    64 bytes from localhost (127.0.0.1): icmp_req=1 ttl=64 time=0.030 ms
+    ...
+    $ ping -c 1 doc-address-00000000000000000000000000.localhost
+    PING doc-address-00000000000000000000000000.localhost (127.0.0.1) 56(84) bytes of data.
+    64 bytes from localhost (127.0.0.1): icmp_req=1 ttl=64 time=0.020 ms
+    ...
+
 ### Defining index field API
 
 To define a new index field for the search domain, `DefineIndexField`
@@ -245,7 +275,7 @@ for details.
 To register documents, Document Service API is used. Here is endpoint
 host name format of Document Service API on Groonga CloudSearch:
 
-* `doc-DOMAIN_NAME-00000000000000000000000000.localhost`
+ * `doc-DOMAIN_NAME-00000000000000000000000000.localhost`
 
 Post documents in SDF JSON representation to the endpoint. SDF is
 acronym of Search Data Format. Here is a sample SDF JSON
@@ -279,7 +309,7 @@ for details of SDF JSON representation.
 Here is an API request to register documents that are stored in
 `addresses.sdf.json` to `address` search domain:
 
-    $ curl -X POST --upload-file addresses.sdf.json --header "Content-Type: application/json" http://doc-example-00000000000000000000000000.localhost:7575/2011-02-01/documents/batch
+    $ curl -X POST --upload-file addresses.sdf.json --header "Content-Type: application/json" http://doc-address-00000000000000000000000000.localhost:7575/2011-02-01/documents/batch
 
 See also: [documents/batch JSON API - Amazon
 CloudSearch](http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/DocumentsBatch.JSON.html#DocumentsBatch.JSON.ResponseProperties)
