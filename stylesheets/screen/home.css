@@ -69,6 +69,7 @@ h1#global-heading {
 #featured p {
   display: inline-table;
   margin-left: 1em;
+  text-align: center;
 }
 
 #featured #version {
