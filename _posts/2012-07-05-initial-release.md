@@ -20,7 +20,7 @@ However, there are two issues. First, you have to learn about how to use APIs of
 
 <a href="/images/architecture-acs-vs-gcs-large.png" rel="lightbox"><img src="/images/architecture-acs-vs-gcs-small.png" alt="(Figure 2: Web Apps with Amazon CloudSearch v.s. Web Apps with Groonga CloudSearch)" /></a>
 
-The Groonga CloudSearch works as a Web server which provides Web APIs compatible to the Amazon CloudSearch. So, on the early phase, you can develop Web apps as you like, you can measure the traffic, and so on, without signing up to the Amazon Web Services. When you are ready to release your service on the Web, you'll switch the back-end from the Groonga CloudSearch to the Amazon CloudSearch. You just have to change the end point (host name of the URL to access to APIs) from "localhost" to "amazonaws.com".
+The Groonga CloudSearch works as a Web server which provides Web APIs compatible to the Amazon CloudSearch. So, on the early phase, you can develop Web apps as you like, you can measure the traffic, and so on, without signing up to the Amazon Web Services. When you are ready to release your service on the Web, you'll switch the back-end from the Groonga CloudSearch to the Amazon CloudSearch. You just have to change the endpoint (host name of the URL to access to APIs) from "localhost" to "amazonaws.com".
 
 Currently, Groonga CloudSearch supports only some basic features of the Amazon CloudSearch APIs. We are keeping up to grow the compatibility. If you'd like to get involved, fork the [repository on GitHub](https://github.com/groonga/gcs) and send pull requests to us, please. Of course, we are also welcome your feedback.
 
