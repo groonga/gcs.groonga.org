@@ -19,7 +19,7 @@ page](http://aws.amazon.com/cloudsearch/) about them.
  * [Prepare test environment](#prepare_test_environment)
    * [Install Groonga CloudSearch](#install_groonga_cloudsearch)
    * [Register example search domain](#register__search_domain)
-   * [Start Groonga CloudSearch service](#start_groonga_cloudsearch_service)
+   * [Start Groonga CloudSearch server](#start_groonga_cloudsearch_server)
    * [Import example documents](#import_example_documents)
  * [How to search documents](#how-to-search-documents)
    
@@ -35,7 +35,7 @@ page](http://aws.amazon.com/cloudsearch/) about them.
 ## Summary
 
 Groonga CloudSearch is an Amazon CloudSearch compatible open source
-full text search service. Groonga CloudSearch provides Amazon
+full text search server. Groonga CloudSearch provides Amazon
 CloudSearch compatible API. You don't need to pay any fee, register
 any sites and buy a new server to use Groonga CloudSearch.  You can
 try Amazon CloudSearch compatible API on your computer and develop
@@ -102,7 +102,7 @@ Groonga CloudSearch uses the following endpoint host name formats:
 `00000000000000000000000000` for now. It'll be replaced unique ID in
 the future release.
 
-To access local Groonga CloudSearch service by those endpoint host
+To access local Groonga CloudSearch server by those endpoint host
 names, you need to resolve those endpoint host names as
 `127.0.0.1`. Run the following command to register those endpoint host
 names to your `/etc/hosts`:
@@ -123,15 +123,15 @@ resolved:
     64 bytes from localhost (127.0.0.1): icmp_req=1 ttl=64 time=0.020 ms
     ...
 
-### Start Groonga CloudSearch service
+### Start Groonga CloudSearch server
 
-Run Groonga CloudSearch service by `gcs` command:
+Run Groonga CloudSearch server by `gcs` command:
 
     $ gcs
 
 <img src="gcs-started.png" alt="gcs started" width="100%" />
 
-Groonga CloudSearch service listens at
+Groonga CloudSearch server listens at
 [http://localhost:7575/](http://localhost:7575/) by default.
 
 ### Import example documents
