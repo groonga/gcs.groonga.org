@@ -22,12 +22,17 @@ extract it. You don't need to install Xcode and so on.
     tar xvzf gcs-1.0.0.tar.gz
 
 You have `gcs` command that starts Groonga CloudSearch service in
-`gcs-1.0.0/` directory.
+`gcs-1.0.0/` directory. Add the absolute path to `gcs-1.0.0/`
+directory to `PATH` environment variable. Here are commands for bash
+user to do it:
+
+    echo "PATH=\"$PWD/gcs-1.0.0:\$PATH\"" >> ~/.bash_login
+    exec bash -l
 
 To confirm that Groonga CloudSearch is installed successfully, type
 the following command:
 
-    $ gcs-1.0.0/gcs --version
+    $ gcs --version
     1.0.0
 
 If you got 1.0.0, Groonga CloudSearch is installed successfully! Yey!
