@@ -1,7 +1,7 @@
 ---
 layout: default
 style: screen/home.css
-description: Groonga CloudSearch is an Amazon CloudSearch compatible open source full text search service.
+description: Groonga CloudSearch is an Amazon CloudSearch compatible open source full text search server.
 ---
 
 <section id="cover">
@@ -9,7 +9,7 @@ description: Groonga CloudSearch is an Amazon CloudSearch compatible open source
       <span class="sub-title">Open Source Amazon CloudSearch on Your Computer</span></h1>
 
   <p id="description">Groonga CloudSearch is an Amazon CloudSearch
-     compatible open source full text search service.</p>
+     compatible open source full text search server.</p>
 
   <div id="featured">
     <p id="version"><span id="version-number">v1.0.0</span>
