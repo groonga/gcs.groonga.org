@@ -1,0 +1,12 @@
+.communities {
+  width: 48%;
+  margin-bottom: 2em;
+}
+
+#communities-1 {
+  float: left;
+}
+
+#communities-2 {
+  float: right;
+}

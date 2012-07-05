@@ -109,6 +109,7 @@ nav ul li {
 
 footer {
   border-top: 1px solid;
+  clear: both;
   font-size: 95%;
   margin: 2em -10% 0;
   padding: 1em 10% 0;

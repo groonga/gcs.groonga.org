@@ -1,6 +1,7 @@
 ---
 title: Community
 layout: default
+style: screen/community.css
 ---
 # Community
 
@@ -9,6 +10,8 @@ CloudSearch implementation. You can share knowledges and problems
 about Groonga CloudSearch with other users and developers. You can
 also join Groonga CloudSearch development to resolve your problems.
 There are many places where you can communicate on the internet.
+
+<!--
 
 ## <img src="/images/github-octocats-32.png" alt="" />GitHub
 
@@ -58,3 +61,41 @@ page to share your Groonga CloudSearch related information.
 [@groonga](https://twitter.com/groonga) also announces about Groonga
 CloudSearch related information. You can mention to it to ask Groonga
 CloudSearch related questions.
+
+-->
+
+<div class="communities" id="communities-1">
+
+<h2 id="github"><img alt="" src="/images/github-octocats-32.png" />GitHub</h2>
+
+<p><a href="https://github.com/groonga/gcs">groonga/gcs</a> is the repository of Groonga CloudSearch.</p>
+
+<p>If you find a bug or have a feature request, submit it to <a href="https://github.com/groonga/gcs/issues">the issue tracker on GitHub</a>. Pull request is also welcome.</p>
+
+<p><a href="https://github.com/groonga/gcs/wiki">The Wiki on GitHub</a> is used for developers. There are <a href="https://github.com/groonga/gcs/wiki/Roadmap">the roadmap</a>, documents to start to develop Groonga CloudSearch itself and so on.</p>
+
+<p><a href="https://github.com/groonga/gcs.groonga.org">groonga/gcs.groonga.org</a> is the repository of http://gcs.groonga.org/.</p>
+
+<h2 id="mailing_list"><img alt="" src="/images/mail-32.png" />Mailing List</h2>
+
+<p>The <a href="https://lists.sourceforge.net/lists/listinfo/groonga-talk">groonga-talk mailing list</a> is used for announcements and discussion about Groonga CloudSearch. You can use it to get the latest information about Groonga CloudSearch and ask your problems.</p>
+
+<p>Note that the mailing list is also used for <a href="../docs/faq/#search-engine">groonga</a>. So you will receive mails that doesn&#8217;t talk about Groonga CloudSearch.</p>
+
+</div>
+
+<div class="communities" id="communities-2">
+
+<h2 id="blog"><img alt="" src="/images/blog-32.png" />Blog</h2>
+
+<p><a href="/blog/">Groonga CloudSearch Blog</a> announces about Groonga CloudSearch related information. To get the latest information about Groonga CloudSearch, subscribe the blog. You can comment to each post via Facebook.</p>
+
+<h2 id="facebook"><img alt="" src="/images/facebook-32.png" />Facebook</h2>
+
+<p><a href="https://www.facebook.com/GroongaCloudSearch">Groonga CloudSearch Faceboock page</a> also announces about Groonga CloudSearch related information. You can also use the page to share your Groonga CloudSearch related information.</p>
+
+<h2 id="twitter"><img alt="" src="/images/twitter-32.png" />Twitter</h2>
+
+<p><a href="https://twitter.com/groonga">@groonga</a> also announces about Groonga CloudSearch related information. You can mention to it to ask Groonga CloudSearch related questions.</p>
+
+</div>
