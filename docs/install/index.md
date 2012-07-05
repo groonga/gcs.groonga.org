@@ -24,7 +24,7 @@ extract it. You don't need to install Xcode and so on.
 You have `gcs` command that starts Groonga CloudSearch service in
 `gcs-1.0.0/` directory.
 
-To confirm that Groonga ClouldSearch is installed successfully, type
+To confirm that Groonga CloudSearch is installed successfully, type
 the following command:
 
     $ gcs-1.0.0/gcs --version
@@ -56,7 +56,7 @@ Install Groonga CloudSearch:
 You have `gcs` command that starts Groonga CloudSearch service in
 `/usr/bin/` directory.
 
-To confirm that Groonga ClouldSearch is installed successfully, type
+To confirm that Groonga CloudSearch is installed successfully, type
 the following command:
 
     $ gcs --version
@@ -94,7 +94,7 @@ Install Groonga CloudSearch:
 You have `gcs` command that starts Groonga CloudSearch service in
 `/usr/local/bin/` directory.
 
-To confirm that Groonga ClouldSearch is installed successfully, type
+To confirm that Groonga CloudSearch is installed successfully, type
 the following command:
 
     $ gcs --version
@@ -114,7 +114,7 @@ command after you install Node.js:
 
 You have `gcs` command that starts Groonga CloudSearch service.
 
-To confirm that Groonga ClouldSearch is installed successfully, type
+To confirm that Groonga CloudSearch is installed successfully, type
 the following command:
 
     $ gcs --version
