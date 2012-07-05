@@ -191,6 +191,10 @@ pre code {
   padding: 0;
 }
 
+pre {
+  white-space: pre-wrap;
+}
+
 
 #fork-me {
   margin: 0;
