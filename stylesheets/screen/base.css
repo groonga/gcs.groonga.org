@@ -172,11 +172,12 @@ code, pre {
   background: #E5F1FB;
   -moz-border-radius: 0.3em;
   -webkit-border-radius: 0.3em;
-  -o-border-radius: 0.3em;
-  -ms-border-radius: 0.3em;
   border-radius: 0.3em;
   border: #A5C1CB 1px solid;
-  color: black;
+  -moz-box-shadow: #A5C1CB 0.1em 0.1em 0.3em;
+  -webkit-box-shadow: #A5C1CB 0.1em 0.1em 0.3em;
+  box-shadow: #A5C1CB 0.1em 0.1em 0.3em;
+  color: #35515B;
   padding: 0.5em 1em;
   text-shadow: none;
 }
@@ -188,9 +189,13 @@ code {
 pre code {
   background: transparent;
   border: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
   color: inherit;
   margin: 0;
   padding: 0;
+  text-shadow: inherit;
 }
 
 pre {
