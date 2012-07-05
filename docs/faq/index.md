@@ -69,7 +69,7 @@ table](/#functional-comparison) for list of implemented API.
 
 Groonga CloudSearch will provide 100% compatible Amazon CloudSearch
 API in the future. Join our [community](../community/) to implement
-open source full text search service!
+open source full text search server!
 
 ## How to contribute? {#how-to-contribute}
 
