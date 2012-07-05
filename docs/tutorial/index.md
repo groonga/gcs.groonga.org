@@ -22,7 +22,7 @@ full text search service. Groonga CloudSearch provides Amazon
 CloudSearch compatible API. You don't need to pay any fee, register
 any sites and buy a new server to use Groonga CloudSearch.  You can
 try Amazon CloudSearch compatible API on your computer and develop
-your application that uses Aamazon CloudSearch API.
+your application that uses Amazon CloudSearch API.
 
 You will get your Amazon CloudSearch API on your computer after
 this tutorial.
@@ -37,7 +37,7 @@ described later.
 
 ## Prepare test environment
 
-This section describes how to parepare your environment to do this
+This section describes how to prepare your environment to do this
 tutorial. In this tutorial, Mac OS X is used but you can also use
 Ubuntu 12.04 LTS or CentOS 6.
 
@@ -131,7 +131,7 @@ If you see
 
 Hit enter to start importing.
 
-If you need some action before start importing, you will see the instrucion like the screenshot below. Follow the instructions and run `gcs-import-examples` again.
+If you need some action before start importing, you will see the instructions like the screenshot below. Follow the instructions and run `gcs-import-examples` again.
 
 <img src="gcs-import-examples-error.png" alt="gcs-import-examples command started with error" width="100%" />
 
@@ -144,7 +144,7 @@ OK. Test environment is prepared. Let's try search API.
 ## How to search documents
 
 Simple search API is used for searching documents. Groonga CloudSearch
-also provides dashbord Web page at
+also provides dashboard Web page at
 [http://localhost:7575/](http://localhost:7575/).
 
 Open [http://localhost:7575/](http://localhost:7575/) to try simple
@@ -192,7 +192,7 @@ You need to create search domain and text fields before registering
 documents. Configuration API is used for them. This section describes
 how to create a search domain.
 
-Confiugration API is for creating, configureing and managing search
+Configuration API is for creating, configuring and managing search
 domains. Configuration API requires `Action` parameter and `Version`
 parameter. `Version` parameter must be `2011-02-01` for all
 configuration API.
