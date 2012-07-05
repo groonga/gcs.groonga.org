@@ -3,7 +3,7 @@ title: Groonga CloudSearch 1.0 is out!
 layout: post
 ---
 
-Today we shipped the initial release of "Groonga CloudSearch". Groonga CloudSearch is an Amazon CloudSearch compatible open source full text search service. By Groonga CloudSearch, you can try Amazon CloudSearch API without paying any fee. It is made for all Web developers who are planning to build Web applications with Amazon CloudSearch. You can download the package and read the tutorial on [the home page of this project site](/).
+Today we shipped the initial release of "Groonga CloudSearch". Groonga CloudSearch is an Amazon CloudSearch compatible open source full text search server. By Groonga CloudSearch, you can try Amazon CloudSearch API without paying any fee. It is made for all Web developers who are planning to build Web applications with Amazon CloudSearch. You can download the package and read the tutorial on [the home page of this project site](/).
 
 
 ### What's Amazon CloudSearch?
