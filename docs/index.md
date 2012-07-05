@@ -14,7 +14,7 @@ layout: default
 implemented Amazon CloudSearch API by Groonga CloudSearch.
 
 [Restrictions](restrictions/) lists the current restrictions
-restrictions of Groonga CloudSearch.
+of Groonga CloudSearch.
 
 [FAQ](faq/) answers frequently asked questions about Groonga
 CloudSearch.
