@@ -24,7 +24,7 @@ development with continuous integration.
 ## Does Groonga CloudSearch work in the cloud? {#work-in-the-cloud}
 
 No. Groonga CloudSearch isn't provided as SaaS and doesn't support
-auto scale-out and scale-. You need to install Groonga CloudSearch by yourself
+auto scale-out. You need to install Groonga CloudSearch by yourself
 and Groonga CloudSearch works as one full text search service
 instance.
 
