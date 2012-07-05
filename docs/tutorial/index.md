@@ -321,3 +321,5 @@ Now, you can search registered documents! Yay!
 
 Join our [Community](/community/) and share your requests, problems
 and so on!
+
+See also [FAQ](../faq/) to learn more about Groonga CloudSearch.
