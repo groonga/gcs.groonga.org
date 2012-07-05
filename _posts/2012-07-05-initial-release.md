@@ -16,7 +16,7 @@ However, there are two issues. First, you have to learn about how to use APIs of
 
 ### How the Groonga CloudSearch helps you?
 
-It is named as "CloudSearch" but it's not a SaaS. It is a software installable to your computer (Mac OS X, Ubuntu, Debian, CentOS, and so on.)
+[It is named as "CloudSearch" but it's not a SaaS](/docs/faq/#why-cloud-in-name). It is a software that can be installed to your computer such as Mac OS X, Ubuntu, CentOS and so on.
 
 <a href="/images/architecture-acs-vs-gcs-large.png" rel="lightbox"><img src="/images/architecture-acs-vs-gcs-small.png" alt="(Figure 2: Web Apps with Amazon CloudSearch v.s. Web Apps with Groonga CloudSearch)" /></a>
 
