@@ -136,7 +136,7 @@ description: Groonga CloudSearch is an Amazon CloudSearch compatible open source
 
   <tbody id="functional-comparison-misc">
   <tr>
-    <th rowspan="7">Misc.</th>
+    <th rowspan="8">Misc.</th>
     <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/DocumentsBatch.XML.html">XML type requests and responses</a></td>
     <td class="functional-ng">&#x2715;</td><td class="functional-ok">&#x2713;</td>
   </tr>
@@ -158,6 +158,10 @@ description: Groonga CloudSearch is an Amazon CloudSearch compatible open source
   </tr>
   <tr>
     <td>Auto scaling</td>
+    <td class="functional-ng">&#x2715;</td><td class="functional-ok">&#x2713;</td>
+  </tr>
+  <tr>
+    <td>SaaS</td>
     <td class="functional-ng">&#x2715;</td><td class="functional-ok">&#x2713;</td>
   </tr>
   <tr>
