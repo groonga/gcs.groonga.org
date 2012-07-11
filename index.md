@@ -58,7 +58,7 @@ description: Groonga CloudSearch is an Amazon CloudSearch compatible open source
   </tr>
   <tr>
     <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/deletedomain.html">Deletion of existing domains</a></td>
-    <td class="functional-ok">&#x2713;</td><td class="functional-ok">&#x2713;</td>
+    <td class="functional-ok">&#x2713; (v1.0.1-)</td><td class="functional-ok">&#x2713;</td>
   </tr>
   <tr>
     <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/configureaccess.html">Configuring existing search domains</a></td>
@@ -70,7 +70,7 @@ description: Groonga CloudSearch is an Amazon CloudSearch compatible open source
   </tr>
   <tr>
     <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/indexing.html">Re-indexing of documents</a></td>
-    <td class="functional-ok">&#x2713;</td><td class="functional-ok">&#x2713;</td>
+    <td class="functional-ok">&#x2713; (v1.0.1-)</td><td class="functional-ok">&#x2713;</td>
   </tr>
   <tr>
     <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/configureindexfields.html">Various type index fields (integer, reference, and so on)</a></td>
@@ -86,7 +86,7 @@ description: Groonga CloudSearch is an Amazon CloudSearch compatible open source
   </tr>
   <tr>
     <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/deldocs.html">Deletion of stored documents</a></td>
-    <td class="functional-ok">&#x2713;</td><td class="functional-ok">&#x2713;</td>
+    <td class="functional-ok">&#x2713; (v1.0.1-)</td><td class="functional-ok">&#x2713;</td>
   </tr>
   <tr>
     <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/Limits.html">Strict validations</a></td>
