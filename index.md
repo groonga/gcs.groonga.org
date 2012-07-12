@@ -126,7 +126,7 @@ description: Groonga CloudSearch is an Amazon CloudSearch compatible open source
   </tr>
   <tr>
     <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/synonymopts.html">Synonyms</a></td>
-    <td class="functional-ng">&#x2715;</td><td class="functional-ok">&#x2713;</td>
+    <td class="functional-ok">&#x2713; (v1.1.0-)</td><td class="functional-ok">&#x2713;</td>
   </tr>
   <tr>
     <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/searching.html">Searching documents by complex queries</a></td>
