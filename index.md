@@ -53,6 +53,14 @@ description: Groonga CloudSearch is an Amazon CloudSearch compatible open source
     <td class="functional-ok">&#x2713;</td><td class="functional-ok">&#x2713;</td>
   </tr>
   <tr>
+    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/configureindexfields.html">Creating uint type index fields</a></td>
+    <td class="functional-ok">&#x2713; (v1.1.0-)</td><td class="functional-ok">&#x2713;</td>
+  </tr>
+  <tr>
+    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/configureindexfields.html">Creating literal type index fields</a></td>
+    <td class="functional-ok">&#x2713; (v1.1.0-)</td><td class="functional-ok">&#x2713;</td>
+  </tr>
+  <tr>
     <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/requestauth.html">Authentications</a></td>
     <td class="functional-ng">&#x2715;</td><td class="functional-ok">&#x2713;</td>
   </tr>
@@ -73,7 +81,7 @@ description: Groonga CloudSearch is an Amazon CloudSearch compatible open source
     <td class="functional-ok">&#x2713; (v1.1.0-)</td><td class="functional-ok">&#x2713;</td>
   </tr>
   <tr>
-    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/configureindexfields.html">Various type index fields (integer, reference, and so on)</a></td>
+    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/addsourcefield.html">Sources for index fields</a></td>
     <td class="functional-ng">&#x2715;</td><td class="functional-ok">&#x2713;</td>
   </tr>
   </tbody>
