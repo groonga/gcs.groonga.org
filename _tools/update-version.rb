@@ -3,17 +3,17 @@
 require "open-uri"
 require "json"
 
-PACKAGE_JSON_URL = "https://raw.github.com/groonga/gcs/master/package.json"
+SOURCE_URL = "http://registry.npmjs.org/gcs"
 
 def version
   @version ||= fetch_master_version
 end
 
 def fetch_master_version
-  manifest = open(PACKAGE_JSON_URL) do |package_json|
-    JSON.parse(package_json.read)
+  registry = open(SOURCE_URL) do |registry_json|
+    JSON.parse(registry_json.read)
   end
-  manifest["version"]
+  registry["dist-tags"]["latest"]
 end
 
 def config_file
