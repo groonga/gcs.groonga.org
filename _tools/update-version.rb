@@ -2,7 +2,6 @@
 
 require "open-uri"
 require "json"
-require "fileutils"
 
 PACKAGE_JSON_URL = "https://raw.github.com/groonga/gcs/master/package.json"
 
