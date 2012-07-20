@@ -2,3 +2,4 @@ title: Groonga CloudSearch
 permalink: /blog/:year/:month/:day/:title/
 author: Groonga CloudSearch project
 url: http://gcs.groonga.org
+version: 1.0.0

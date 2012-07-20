@@ -18,24 +18,24 @@ How to install on [other platforms](#others) is described at the last.
 All-in-one package is provided for Mac OS X. You just download and
 extract it. You don't need to install Xcode and so on.
 
-    curl -O http://packages.groonga.org/macosx/gcs/gcs-1.0.0.tar.gz
-    tar xvzf gcs-1.0.0.tar.gz
+    curl -O http://packages.groonga.org/macosx/gcs/gcs-{{ site.version }}.tar.gz
+    tar xvzf gcs-{{ site.version }}.tar.gz
 
 You have `gcs` command that starts Groonga CloudSearch service in
-`gcs-1.0.0/` directory. Add the absolute path to `gcs-1.0.0/`
+`gcs-{{ site.version }}/` directory. Add the absolute path to `gcs-{{ site.version }}/`
 directory to `PATH` environment variable. Here are commands for bash
 user to do it:
 
-    echo "PATH=\"$PWD/gcs-1.0.0:\$PATH\"" >> ~/.bash_login
+    echo "PATH=\"$PWD/gcs-{{ site.version }}:\$PATH\"" >> ~/.bash_login
     exec bash -l
 
 To confirm that Groonga CloudSearch is installed successfully, type
 the following command:
 
     $ gcs --version
-    1.0.0
+    {{ site.version }}
 
-If you got 1.0.0, Groonga CloudSearch is installed successfully! Yey!
+If you got {{ site.version }}, Groonga CloudSearch is installed successfully! Yey!
 
 ## CentOS 6 {#centos}
 
@@ -65,9 +65,9 @@ To confirm that Groonga CloudSearch is installed successfully, type
 the following command:
 
     $ gcs --version
-    1.0.0
+    {{ site.version }}
 
-If you got 1.0.0, Groonga CloudSearch is installed successfully! Yey!
+If you got {{ site.version }}, Groonga CloudSearch is installed successfully! Yey!
 
 ## Ubuntu 12.04 LTS (Precise Pangolin) {#ubuntu}
 
@@ -103,9 +103,9 @@ To confirm that Groonga CloudSearch is installed successfully, type
 the following command:
 
     $ gcs --version
-    1.0.0
+    {{ site.version }}
 
-If you got 1.0.0, Groonga CloudSearch is installed successfully! Yey!
+If you got {{ site.version }}, Groonga CloudSearch is installed successfully! Yey!
 
 ## Others {#others}
 
@@ -123,6 +123,6 @@ To confirm that Groonga CloudSearch is installed successfully, type
 the following command:
 
     $ gcs --version
-    1.0.0
+    {{ site.version }}
 
-If you got 1.0.0, Groonga CloudSearch is installed successfully! Yey!
+If you got {{ site.version }}, Groonga CloudSearch is installed successfully! Yey!

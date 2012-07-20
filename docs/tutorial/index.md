@@ -68,7 +68,7 @@ Type the following command to confirm Groonga CloudSearch is installed
 successfully:
 
     $ gcs --version
-    1.0.0
+    {{ site.version }}
 
 ### Register `example` search domain
 
