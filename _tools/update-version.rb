@@ -1,6 +1,6 @@
 #!/usr/bin/ruby1.9.1
 
-require "httpclient"
+require "open-uri"
 require "json"
 require "fileutils"
 
@@ -11,9 +11,9 @@ def version
 end
 
 def fetch_master_version
-  client = HTTPClient.new
-  manifest = client.get_content(PACKAGE_JSON_URL)
-  manifest = JSON.parse(manifest)
+  manifest = open(PACKAGE_JSON_URL) do |package_json|
+    JSON.parse(package_json.read)
+  end
   manifest["version"]
 end
 
