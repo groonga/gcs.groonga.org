@@ -34,5 +34,3 @@ def update_config
 end
 
 update_config
-
-0
