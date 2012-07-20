@@ -33,8 +33,6 @@ def update_config
   puts "The version number has been updated to #{version} successfully."
 end
 
-FileUtils.cp(config_file, "#{config_file}.bak")
-
 update_config
 
 0
