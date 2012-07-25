@@ -215,7 +215,7 @@ With a small modification (monkey patching) of aws\_cloud\_search gem, we can us
 We have described about the patch and how to create scripts to search, index and remove the documents with aws\_cloud\_search and Groonga CloudSearch.
 
 
-  [aws\_cloud\_search]: https://github.com/spokesoftware/aws\_cloud\_search
+  [aws\_cloud\_search]: https://github.com/spokesoftware/aws_cloud_search
   [tutorial]: /docs/tutorial/
   [ruby]: http://www.ruby-lang.org/en/
   [rubygems]: http://rubygems.org/
