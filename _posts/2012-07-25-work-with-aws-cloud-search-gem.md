@@ -1,6 +1,7 @@
 ---
 title: Using Groonga CloudSearch with aws_cloud_search gem
 layout: post
+description: Groonga CloudSearch is an Amazon CloudSearch compatible open source full text search server. This article describes how to use Groonga CloudSearch with aws_cloud_search gem, a wrapper library in Ruby for Amazon CloudSearch.
 ---
 ### Introduction
 
