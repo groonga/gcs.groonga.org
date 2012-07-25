@@ -210,9 +210,14 @@ The removed entry, `Snowy Corporation` is no longer appeared in the search resul
 
 ### NOTE Do we need a more realistic example like Sinatra app?
 
-### Summary
+### Conclusion
 
-  TODO
+We have introduced aws\_cloud\_search gem, which wraps Amazon CloudSearch.
+With small modification of aws\_cloud\_search gem, we can use it with Groonga CloudSearch.
+
+TODO
+
+
 
   [aws\_cloud\_search]: https://github.com/spokesoftware/aws\_cloud\_search
   [tutorial]: /docs/tutorial/
