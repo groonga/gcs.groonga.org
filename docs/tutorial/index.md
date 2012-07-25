@@ -18,16 +18,14 @@ page](http://aws.amazon.com/cloudsearch/) about them.
  * [Summary](#summary)
  * [Prepare test environment](#prepare_test_environment)
    * [Install Groonga CloudSearch](#install_groonga_cloudsearch)
-   * [Register example search domain](#register__search_domain)
+   * [About search domain and endpoints](#about_search_domain_and_endpoints)
    * [Start Groonga CloudSearch server](#start_groonga_cloudsearch_server)
    * [Import example documents](#import_example_documents)
  * [How to search documents](#how-to-search-documents)
-   
    * [Restrictions](#restrictions)
  * [How to register documents](#how-to-register-documents)
    * [Configuration API](#configuration_api)
    * [Creating search domain API](#creating_search_domain_api)
-   * [Registering endpoint host names](#registering_endpoint_host_names)
    * [Defining index field API](#defining_index_field_api)
    * [Registering documents API](#registering_documents_api)
  * [Next step](#next_step)
@@ -70,7 +68,7 @@ successfully:
     $ gcs --version
     {{ site.version }}
 
-### Register `example` search domain
+### About search domain and endpoints
 
 Amazon CloudSearch API groups search target documents. Each group is
 searched separately. The group is called as `search domain`. `Search
@@ -95,33 +93,32 @@ CloudSearch](http://docs.amazonwebservices.com/cloudsearch/latest/developerguide
 
 Groonga CloudSearch uses the following endpoint host name formats:
 
- * `search-DOMAIN_NAME-00000000000000000000000000.localhost`
- * `doc-DOMAIN_NAME-00000000000000000000000000.localhost`
+ * `search-DOMAIN_NAME-00000000000000000000000000.BASE_DOMAIN_NAME`
+ * `doc-DOMAIN_NAME-00000000000000000000000000.BASE_DOMAIN_NAME`
 
 `DOMAIN_NAME` is search domain name. Search domain ID is always
 `00000000000000000000000000` for now. It'll be replaced unique ID in
 the future release.
 
-To access local Groonga CloudSearch server by those endpoint host
-names, you need to resolve those endpoint host names as
-`127.0.0.1`. Run the following command to register those endpoint host
-names to your `/etc/hosts`:
+`BASE_DOMAIN_NAME` can be an arbitrary name as long as we can reach the Groonga
+CloudSearch server via the endpoints.
+In this situation, [xip.io][] is useful, which is a magic domain name that
+provides wildcard DNS.
 
-    $ sudo gcs-register-hosts example
+With [xip.io][], the endpoints on `localhost` (`127.0.0.1`) can be represented as
 
-<img src="gcs-register-hosts.png" alt="running gcs-register-hosts command" width="100%" />
+ * `search-DOMAIN_NAME-00000000000000000000000000.127.0.0.1.xip.io`
+ * `doc-DOMAIN_NAME-00000000000000000000000000.127.0.0.1.xip.io`
 
-Type the following command to confirm endpoint host names can be
-resolved:
+Of course, we can use `localhost` as `BASE_DOMAIN_NAME`, for example.
+If you do so, you need to setup these endpoints in /etc/hosts.
+In this tutorial, we just use [xip.io][] for simplicity.
 
-    $ ping -c 1 search-example-00000000000000000000000000.localhost
-    PING search-example-00000000000000000000000000.localhost (127.0.0.1) 56(84) bytes of data.
-    64 bytes from localhost (127.0.0.1): icmp_req=1 ttl=64 time=0.030 ms
-    ...
-    $ ping -c 1 doc-example-00000000000000000000000000.localhost
-    PING doc-example-00000000000000000000000000.localhost (127.0.0.1) 56(84) bytes of data.
-    64 bytes from localhost (127.0.0.1): icmp_req=1 ttl=64 time=0.020 ms
-    ...
+We use the domain whose name is `example` in this tutorial.
+The endpoints for the domain `example` are as follows.
+
+ * `search-example-00000000000000000000000000.127.0.0.1.xip.io`
+ * `doc-example-00000000000000000000000000.127.0.0.1.xip.io`
 
 ### Start Groonga CloudSearch server
 
@@ -240,35 +237,6 @@ See also: [CreateDomain - Amazon
 CloudSearch](http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/API_CreateDomain.html)
 for details.
 
-### Registering endpoint host names
-
-To access the created search domain, you need to endpoint host names
-such as:
-
- * `search-DOMAIN_NAME-00000000000000000000000000.localhost`
- * `doc-DOMAIN_NAME-00000000000000000000000000.localhost`
-
-You can use `gcs-register-hosts` command to register those host names
-to `/etc/hosts` as you saw in [how to search
-documents](#how-to-search-documents) section.
-
-Here is a command to register endpoint host names for `address` search
-domain:
-
-    $ sudo gcs-register-hosts address
-
-Type the following command to confirm endpoint host names can be
-resolved:
-
-    $ ping -c 1 search-address-00000000000000000000000000.localhost
-    PING search-address-00000000000000000000000000.localhost (127.0.0.1) 56(84) bytes of data.
-    64 bytes from localhost (127.0.0.1): icmp_req=1 ttl=64 time=0.030 ms
-    ...
-    $ ping -c 1 doc-address-00000000000000000000000000.localhost
-    PING doc-address-00000000000000000000000000.localhost (127.0.0.1) 56(84) bytes of data.
-    64 bytes from localhost (127.0.0.1): icmp_req=1 ttl=64 time=0.020 ms
-    ...
-
 ### Defining index field API
 
 To define a new index field for the search domain, `DefineIndexField`
@@ -289,10 +257,12 @@ for details.
 
 ### Registering documents API
 
-To register documents, Document Service API is used. Here is endpoint
-host name format of Document Service API on Groonga CloudSearch:
+To register documents, Document Service API is used.
+The endpoint of Document Service API on Groonga CloudSearch
+using [xip.io][] is:
 
- * `doc-DOMAIN_NAME-00000000000000000000000000.localhost`
+
+ * `doc-DOMAIN_NAME-00000000000000000000000000.127.0.0.1.xip.io`
 
 Post documents in SDF JSON representation to the endpoint. SDF is
 acronym of Search Data Format. Here is a sample SDF JSON
@@ -326,7 +296,7 @@ for details of SDF JSON representation.
 Here is an API request to register documents that are stored in
 `addresses.sdf.json` to `address` search domain:
 
-    $ curl -X POST --upload-file addresses.sdf.json --header "Content-Type: application/json" http://doc-address-00000000000000000000000000.localhost:7575/2011-02-01/documents/batch
+    $ curl -X POST --upload-file addresses.sdf.json --header "Content-Type: application/json" http://doc-address-00000000000000000000000000.127.0.0.1.xip.io:7575/2011-02-01/documents/batch
 
 See also: [documents/batch JSON API - Amazon
 CloudSearch](http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/DocumentsBatch.JSON.html#DocumentsBatch.JSON.ResponseProperties)
@@ -340,3 +310,5 @@ Join our [Community](/community/) and share your requests, problems
 and so on!
 
 See also [FAQ](../faq/) to learn more about Groonga CloudSearch.
+
+  [xip.io]:http://xip.io/
