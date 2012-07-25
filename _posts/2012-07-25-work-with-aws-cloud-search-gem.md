@@ -1,7 +1,6 @@
 ---
 title: Using Groonga CloudSearch with aws_cloud_search gem
 layout: post
-published: false
 ---
 ### Introduction
 
