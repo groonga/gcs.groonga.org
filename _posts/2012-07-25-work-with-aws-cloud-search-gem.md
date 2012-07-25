@@ -208,7 +208,7 @@ The removed entry, `Snowy Corporation` is no longer appeared in the search resul
     {"id"=>"id3", "data"=>{"_id"=>[3], "_key"=>["id3"], "address"=>["Hongo, Tokyo, Japan"], "email_address"=>["info@clear-code.com"], "name"=>["ClearCode Inc."]}}
     {"id"=>"id9", "data"=>{"_id"=>[9], "_key"=>["id9"], "address"=>["Tokyo, Japan"], "email_address"=>[""], "name"=>["Umbrella Corporation"]}}
 
-### Conclusion
+### Conclusions
 
 We have introduced aws\_cloud\_search gem, which wraps Amazon CloudSearch.
 With a small modification (monkey patching) of aws\_cloud\_search gem, we can use it with Groonga CloudSearch.
