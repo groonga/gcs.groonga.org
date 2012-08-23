@@ -32,6 +32,9 @@ description: Groonga CloudSearch is an Amazon CloudSearch compatible open source
 
 ## Functional comparison {#functional-comparison}
 
+{% assign ok = '<td class="functional-ok">&#x2713;</td>' %}
+{% assign ng = '<td class="functional-ng">&#x2715;</td>' %}
+
 <table id="functional-comparison-table">
   <thead>
   <tr>
@@ -44,45 +47,60 @@ description: Groonga CloudSearch is an Amazon CloudSearch compatible open source
 
   <tbody id="functional-comparison-configuration">
   <tr>
-    <th rowspan="11"><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/ConfigAPI.html">Configuration</a></th>
+    <th rowspan="12"><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/ConfigAPI.html">Configuration</a></th>
     <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/creatingdomains.html">Creating search domains</a></td>
-    <td class="functional-ok">&#x2713;</td><td class="functional-ok">&#x2713;</td>
+    {{ ok }}
+    {{ ok }}
   </tr>
   <tr>
     <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/configureindexfields.html">Creating text type index fields</a></td>
-    <td class="functional-ok">&#x2713;</td><td class="functional-ok">&#x2713;</td>
+    {{ ok }}
+    {{ ok }}
   </tr>
   <tr>
     <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/configureindexfields.html">Creating uint type index fields</a></td>
-    <td class="functional-ok">&#x2713; (v1.1.0-)</td><td class="functional-ok">&#x2713;</td>
+    <td class="functional-ok">&#x2713; (v1.1.0-)</td>
+    {{ ok }}
   </tr>
   <tr>
     <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/configureindexfields.html">Creating literal type index fields</a></td>
-    <td class="functional-ok">&#x2713; (v1.1.0-)</td><td class="functional-ok">&#x2713;</td>
+    <td class="functional-ok">&#x2713; (v1.1.0-)</td>
+    {{ ok }}
   </tr>
   <tr>
     <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/requestauth.html">Authentications</a></td>
-    <td class="functional-ng">&#x2715;</td><td class="functional-ok">&#x2713;</td>
+    {{ ng }}
+    {{ ok }}
+  </tr>
+  <tr>
+    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/API_UpdateServiceAccessPolicies.html">Access Policies</a></td>
+    {{ ng }}
+    {{ ok }}
   </tr>
   <tr>
     <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/deletedomain.html">Deletion of existing domains</a></td>
-    <td class="functional-ok">&#x2713; (v1.1.0-)</td><td class="functional-ok">&#x2713;</td>
+    <td class="functional-ok">&#x2713; (v1.1.0-)</td>
+    {{ ok }}
   </tr>
   <tr>
     <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/configureaccess.html">Configuring existing search domains</a></td>
-    <td class="functional-ng">&#x2715;</td><td class="functional-ok">&#x2713;</td>
+    {{ ng }}
+    {{ ok }}
   </tr>
   <tr>
     <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/configureindexfields.html">Configuring existing index fields</a></td>
-    <td class="functional-ng">&#x2715;</td><td class="functional-ok">&#x2713;</td>
+    {{ ng }}
+    {{ ok }}
   </tr>
   <tr>
     <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/indexing.html">Re-indexing of documents</a></td>
-    <td class="functional-ok">&#x2713; (v1.1.0-)</td><td class="functional-ok">&#x2713;</td>
+    <td class="functional-ok">&#x2713; (v1.1.0-)</td>
+    {{ ok }}
   </tr>
   <tr>
     <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/addsourcefield.html">Sources for index fields</a></td>
-    <td class="functional-ng">&#x2715;</td><td class="functional-ok">&#x2713;</td>
+    {{ ng }}
+    {{ ok }}
   </tr>
   </tbody>
 
@@ -90,23 +108,28 @@ description: Groonga CloudSearch is an Amazon CloudSearch compatible open source
   <tr>
     <th rowspan="5"><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/DocSvcAPI.html">Uploading</a></th>
     <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/senddata.html">Uploading search documents as JSON batches (SDF batches)</a></td>
-    <td class="functional-ok">&#x2713;</td><td class="functional-ok">&#x2713;</td>
+    {{ ok }}
+    {{ ok }}
   </tr>
   <tr>
     <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/deldocs.html">Deletion of stored documents</a></td>
-    <td class="functional-ok">&#x2713; (v1.1.0-)</td><td class="functional-ok">&#x2713;</td>
+    <td class="functional-ok">&#x2713; (v1.1.0-)</td>
+    {{ ok }}
   </tr>
   <tr>
     <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/Limits.html">Strict validations</a></td>
-    <td class="functional-ng">&#x2715;</td><td class="functional-ok">&#x2713;</td>
+    {{ ng }}
+    {{ ok }}
   </tr>
   <tr>
     <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/creatingsdf.html">Atomic operations</a></td>
-    <td class="functional-ng">&#x2715;</td><td class="functional-ok">&#x2713;</td>
+    {{ ng }}
+    {{ ok }}
   </tr>
   <tr>
     <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/versioning.html">Document versions</a></td>
-    <td class="functional-ng">&#x2715;</td><td class="functional-ok">&#x2713;</td>
+    {{ ng }}
+    {{ ok }}
   </tr>
   </tbody>
 
@@ -114,31 +137,38 @@ description: Groonga CloudSearch is an Amazon CloudSearch compatible open source
   <tr>
     <th rowspan="7"><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/SearchAPI.html">Searching</a></th>
     <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/simplesearches.html">Searching documents by simple queries</a></td>
-    <td class="functional-ok">&#x2713;</td><td class="functional-ok">&#x2713;</td>
+    {{ ok }}
+    {{ ok }}
   </tr>
   <tr>
     <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/faceting.html">Getting facet information with search results</a></td>
-    <td class="functional-ng">&#x2715;</td><td class="functional-ok">&#x2713;</td>
+    {{ ng }}
+    {{ ok }}
   </tr>
   <tr>
     <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/tuneranking.html">Result ranking</a></td>
-    <td class="functional-ng">&#x2715;</td><td class="functional-ok">&#x2713;</td>
+    {{ ng }}
+    {{ ok }}
   </tr>
   <tr>
     <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/stemmingopts.html">Stemming</a></td>
-    <td class="functional-ng">&#x2715;</td><td class="functional-ok">&#x2713;</td>
+    {{ ng }}
+    {{ ok }}
   </tr>
   <tr>
     <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/stoppingopts.html">Stopwords</a></td>
-    <td class="functional-ng">&#x2715;</td><td class="functional-ok">&#x2713;</td>
+    {{ ng }}
+    {{ ok }}
   </tr>
   <tr>
     <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/synonymopts.html">Synonyms</a></td>
-    <td class="functional-ok">&#x2713; (v1.1.0-)</td><td class="functional-ok">&#x2713;</td>
+    <td class="functional-ok">&#x2713; (v1.1.0-)</td>
+    {{ ok }}
   </tr>
   <tr>
     <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/searching.html">Searching documents by complex queries</a></td>
-    <td class="functional-ng">&#x2715;</td><td class="functional-ok">&#x2713;</td>
+    {{ ng }}
+    {{ ok }}
   </tr>
   </tbody>
 
@@ -146,35 +176,43 @@ description: Groonga CloudSearch is an Amazon CloudSearch compatible open source
   <tr>
     <th rowspan="8">Misc.</th>
     <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/DocumentsBatch.XML.html">XML type requests and responses</a></td>
-    <td class="functional-ng">&#x2715;</td><td class="functional-ok">&#x2713;</td>
+    {{ ng }}
+    {{ ok }}
   </tr>
   <tr>
     <td><a href="https://console.aws.amazon.com/cloudsearch/home/">Management Console</a></td>
-    <td class="functional-ng">&#x2715;</td><td class="functional-ok">&#x2713;</td>
+    {{ ng }}
+    {{ ok }}
   </tr>
   <tr>
     <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/SvcCLT.html">Command line tools</a></td>
-    <td class="functional-ng">&#x2715;</td><td class="functional-ok">&#x2713;</td>
+    {{ ng }}
+    {{ ok }}
   </tr>
   <tr>
     <td>Works locally</td>
-    <td class="functional-ok">&#x2713;</td><td class="functional-ng">&#x2715;</td>
+    {{ ok }}
+    {{ ng }}
   </tr>
   <tr>
     <td>Works in the cloud</td>
-    <td class="functional-ok">&#x2713;</td><td class="functional-ok">&#x2713;</td>
+    {{ ok }}
+    {{ ok }}
   </tr>
   <tr>
     <td>Auto scaling</td>
-    <td class="functional-ng">&#x2715;</td><td class="functional-ok">&#x2713;</td>
+    {{ ng }}
+    {{ ok }}
   </tr>
   <tr>
     <td>SaaS</td>
-    <td class="functional-ng">&#x2715;</td><td class="functional-ok">&#x2713;</td>
+    {{ ng }}
+    {{ ok }}
   </tr>
   <tr>
     <td>Native CJK support (and better tokenizer)</td>
-    <td class="functional-ok">&#x2713;</td><td class="functional-ng">&#x2715;</td>
+    {{ ok }}
+    {{ ng }}
   </tr>
   </tbody>
 </table>
