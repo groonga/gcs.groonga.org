@@ -99,8 +99,8 @@ description: Groonga CloudSearch is an Amazon CloudSearch compatible open source
   <tbody id="functional-comparison-uploading">
   <tr>
     <th rowspan="6"><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/DocSvcAPI.html">Uploading</a></th>
-    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/senddata.html">Uploading search documents as JSON batches (SDF batches)</a></td>
-    {{ ok }}
+    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/senddata.html">Uploading search documents from SDF batches</a></td>
+    {{ ok_with }} (JSON only){{ end }}
     {{ ok }}
   </tr>
   <tr>
@@ -179,20 +179,89 @@ description: Groonga CloudSearch is an Amazon CloudSearch compatible open source
   </tr>
   </tbody>
 
+  <tbody id="functional-comparison-cui">
+  <tr>
+    <th rowspan="14">Command Line Tools</th>
+    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/CLTCreateDomain.html">Creating domain</a></td>
+    {{ ok_with }} (v1.2.0-){{ end }}
+    {{ ok }}
+  </tr>
+  <tr>
+    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/CLTDescribeDomain.html">Listing domains</a></td>
+    {{ ok_with }} (v1.2.0-){{ end }}
+    {{ ok }}
+  </tr>
+  <tr>
+    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/CLTDeleteDomain.html">Deleting domain</a></td>
+    {{ ok_with }} (v1.2.0-){{ end }}
+    {{ ok }}
+  </tr>
+  <tr>
+    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/CLTConfigureFields.html">Creating and deleting index fields</a></td>
+    {{ ok_with }} (v1.2.0-){{ end }}
+    {{ ok }}
+  </tr>
+  <tr>
+    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/CLTConfigureFields.html">Configuring facet returnability, result returnability, and searchability of index fields</a></td>
+    {{ ok_with }} (v1.2.0-){{ end }}
+    {{ ok }}
+  </tr>
+  <tr>
+    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/CLTConfigureFields.html">Configuring default value and sources of index fields</a></td>
+    {{ ng }}
+    {{ ok }}
+  </tr>
+  <tr>
+    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/CLTConfigureTextOptions.html">Configuring stems</a></td>
+    {{ ng }}
+    {{ ok }}
+  </tr>
+  <tr>
+    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/CLTConfigureTextOptions.html">Configuring stopwords</a></td>
+    {{ ng }}
+    {{ ok }}
+  </tr>
+  <tr>
+    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/CLTConfigureTextOptions.html">Configuring synonyms</a></td>
+    {{ ok_with }} (v1.2.0-){{ end }}
+    {{ ok }}
+  </tr>
+  <tr>
+    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/CLTConfigureRanking.html">Configuring rank expressions</a></td>
+    {{ ng }}
+    {{ ok }}
+  </tr>
+  <tr>
+    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/CLTConfigureAccess.html">Configuring access policies</a></td>
+    {{ ng }}
+    {{ ok }}
+  </tr>
+  <tr>
+    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/CLTIndexDocuments.html">Re-indexing documents</a></td>
+    {{ ok_with }} (v1.2.0-){{ end }}
+    {{ ok }}
+  </tr>
+  <tr>
+    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/CLTPostSDF.html">Posting documents as SDF batches</a></td>
+    {{ ok_with }} (v1.2.0-, JSON only){{ end }}
+    {{ ok }}
+  </tr>
+  <tr>
+    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/CLTConfigureFromSDF.html">Configuring by SDF batches</a></td>
+    {{ ng }}
+    {{ ok }}
+  </tr>
+  </tbody>
+
   <tbody id="functional-comparison-misc">
   <tr>
-    <th rowspan="8">Misc.</th>
+    <th rowspan="7">Misc.</th>
     <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/DocumentsBatch.XML.html">XML type requests and responses</a></td>
     {{ ng }}
     {{ ok }}
   </tr>
   <tr>
     <td><a href="https://console.aws.amazon.com/cloudsearch/home/">Management Console</a></td>
-    {{ ng }}
-    {{ ok }}
-  </tr>
-  <tr>
-    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/SvcCLT.html">Command line tools</a></td>
     {{ ng }}
     {{ ok }}
   </tr>
