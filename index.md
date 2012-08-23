@@ -33,6 +33,8 @@ description: Groonga CloudSearch is an Amazon CloudSearch compatible open source
 ## Functional comparison {#functional-comparison}
 
 {% assign ok = '<td class="functional-ok">&#x2713;</td>' %}
+{% assign ok_with = '<td class="functional-ok">&#x2713;' %}
+{% assign end = '</td>' %}
 {% assign ng = '<td class="functional-ng">&#x2715;</td>' %}
 
 <table id="functional-comparison-table">
@@ -53,18 +55,8 @@ description: Groonga CloudSearch is an Amazon CloudSearch compatible open source
     {{ ok }}
   </tr>
   <tr>
-    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/configureindexfields.html">Creating text type index fields</a></td>
+    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/configureindexfields.html">Creating index fields</a></td>
     {{ ok }}
-    {{ ok }}
-  </tr>
-  <tr>
-    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/configureindexfields.html">Creating uint type index fields</a></td>
-    <td class="functional-ok">&#x2713; (v1.1.0-)</td>
-    {{ ok }}
-  </tr>
-  <tr>
-    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/configureindexfields.html">Creating literal type index fields</a></td>
-    <td class="functional-ok">&#x2713; (v1.1.0-)</td>
     {{ ok }}
   </tr>
   <tr>
@@ -73,28 +65,28 @@ description: Groonga CloudSearch is an Amazon CloudSearch compatible open source
     {{ ok }}
   </tr>
   <tr>
-    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/API_UpdateServiceAccessPolicies.html">Access Policies</a></td>
-    {{ ng }}
-    {{ ok }}
-  </tr>
-  <tr>
     <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/deletedomain.html">Deletion of existing domains</a></td>
-    <td class="functional-ok">&#x2713; (v1.1.0-)</td>
+    {{ ok_with }} (v1.1.0-){{ end }}
     {{ ok }}
   </tr>
   <tr>
-    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/configureaccess.html">Configuring existing search domains</a></td>
+    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/API_UpdateDefaultSearchField.html">Configuring default search field</a></td>
+    {{ ok_with }} (v1.2.0-){{ end }}
+    {{ ok }}
+  </tr>
+  <tr>
+    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/API_UpdateServiceAccessPolicies.html">Configuring access policies</a></td>
     {{ ng }}
     {{ ok }}
   </tr>
   <tr>
-    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/configureindexfields.html">Configuring existing index fields</a></td>
-    {{ ng }}
+    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/configureindexfields.html">Configuring facet returnability, result returnability, and searchability of index fields</a></td>
+    {{ ok_with }} (v1.2.0-){{ end }}
     {{ ok }}
   </tr>
   <tr>
     <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/indexing.html">Re-indexing of documents</a></td>
-    <td class="functional-ok">&#x2713; (v1.1.0-)</td>
+    {{ ok_with }} (v1.1.0-){{ end }}
     {{ ok }}
   </tr>
   <tr>
@@ -113,7 +105,7 @@ description: Groonga CloudSearch is an Amazon CloudSearch compatible open source
   </tr>
   <tr>
     <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/deldocs.html">Deletion of stored documents</a></td>
-    <td class="functional-ok">&#x2713; (v1.1.0-)</td>
+    {{ ok_with }} (v1.1.0-){{ end }}
     {{ ok }}
   </tr>
   <tr>
@@ -162,7 +154,7 @@ description: Groonga CloudSearch is an Amazon CloudSearch compatible open source
   </tr>
   <tr>
     <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/synonymopts.html">Synonyms</a></td>
-    <td class="functional-ok">&#x2713; (v1.1.0-)</td>
+    {{ ok_with }} (v1.1.0-){{ end }}
     {{ ok }}
   </tr>
   <tr>
