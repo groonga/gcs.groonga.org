@@ -40,7 +40,6 @@ description: Groonga CloudSearch is an Amazon CloudSearch compatible open source
 <table id="functional-comparison-table">
   <thead>
   <tr>
-    <th>Category</th>
     <th>Feature</th>
     <th>Groonga CloudSearch</th>
     <th>Amazon CloudSearch</th>
@@ -48,8 +47,8 @@ description: Groonga CloudSearch is an Amazon CloudSearch compatible open source
   </thead>
 
   <tbody id="functional-comparison-configuration">
+  <tr><th colspan="3"><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/ConfigAPI.html">Configuration</a></th></tr>
   <tr>
-    <th rowspan="12"><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/ConfigAPI.html">Configuration</a></th>
     <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/creatingdomains.html">Creating search domains</a></td>
     {{ ok }}
     {{ ok }}
@@ -97,8 +96,8 @@ description: Groonga CloudSearch is an Amazon CloudSearch compatible open source
   </tbody>
 
   <tbody id="functional-comparison-uploading">
+  <tr><th colspan="3"><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/DocSvcAPI.html">Uploading</a></th></tr>
   <tr>
-    <th rowspan="6"><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/DocSvcAPI.html">Uploading</a></th>
     <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/senddata.html">Uploading search documents from SDF batches</a></td>
     {{ ok_with }} (JSON only){{ end }}
     {{ ok }}
@@ -131,8 +130,8 @@ description: Groonga CloudSearch is an Amazon CloudSearch compatible open source
   </tbody>
 
   <tbody id="functional-comparison-searching">
+  <tr><th colspan="3"><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/SearchAPI.html">Searching</a></th></tr>
   <tr>
-    <th rowspan="9"><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/SearchAPI.html">Searching</a></th>
     <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/simplesearches.html">Searching documents by simple queries</a></td>
     {{ ok }}
     {{ ok }}
@@ -180,8 +179,8 @@ description: Groonga CloudSearch is an Amazon CloudSearch compatible open source
   </tbody>
 
   <tbody id="functional-comparison-cui">
+  <tr><th colspan="3">Command Line Tools</th></tr>
   <tr>
-    <th rowspan="14">Command Line Tools</th>
     <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/CLTCreateDomain.html">Creating domain</a></td>
     {{ ok_with }} (v1.2.0-){{ end }}
     {{ ok }}
@@ -254,8 +253,8 @@ description: Groonga CloudSearch is an Amazon CloudSearch compatible open source
   </tbody>
 
   <tbody id="functional-comparison-misc">
+  <tr><th colspan="3">Misc.</th></tr>
   <tr>
-    <th rowspan="7">Misc.</th>
     <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/DocumentsBatch.XML.html">XML type requests and responses</a></td>
     {{ ng }}
     {{ ok }}
