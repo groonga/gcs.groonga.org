@@ -89,6 +89,11 @@ description: Groonga CloudSearch is an Amazon CloudSearch compatible open source
     {{ ok }}
   </tr>
   <tr>
+    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/configureindexfields.html">Default values for index fields</a></td>
+    {{ ng }}
+    {{ ok }}
+  </tr>
+  <tr>
     <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/addsourcefield.html">Sources for index fields</a></td>
     {{ ng }}
     {{ ok }}
@@ -181,17 +186,17 @@ description: Groonga CloudSearch is an Amazon CloudSearch compatible open source
   <tbody id="functional-comparison-cui">
   <tr><th colspan="3">Command Line Tools</th></tr>
   <tr>
-    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/CLTCreateDomain.html">Creating domain</a></td>
+    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/CLTCreateDomain.html">Creating search domain</a></td>
     {{ ok_with }} (v1.2.0-){{ end }}
     {{ ok }}
   </tr>
   <tr>
-    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/CLTDescribeDomain.html">Listing domains</a></td>
+    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/CLTDescribeDomain.html">Listing search domains</a></td>
     {{ ok_with }} (v1.2.0-){{ end }}
     {{ ok }}
   </tr>
   <tr>
-    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/CLTDeleteDomain.html">Deleting domain</a></td>
+    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/CLTDeleteDomain.html">Deleting search domain</a></td>
     {{ ok_with }} (v1.2.0-){{ end }}
     {{ ok }}
   </tr>
