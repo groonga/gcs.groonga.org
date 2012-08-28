@@ -25,6 +25,11 @@ page](http://aws.amazon.com/cloudsearch/) about them.
    
    * [Restrictions](#restrictions)
  * [How to register documents](#how-to-register-documents)
+   * [Command line tools](#command-line-tools)
+   * [Creating search domain API](#creating_search_domain_api)
+   * [Defining index field API](#defining_index_field_api)
+   * [Registering documents API](#registering_documents_api)
+ * [How to register documents via HTTP](#how-to-register-documents-via-http)
    * [Configuration API](#configuration_api)
    * [Creating search domain API](#creating_search_domain_api)
    * [Defining index field API](#defining_index_field_api)
@@ -207,19 +212,120 @@ See also: [Search Requests - Amazon
 CloudSearch](http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/Search.Requests.html)
 for all parameters.
 
+
 ## How to register documents {#how-to-register-documents}
 
 The above section describes how to search documents. The below
 sections describe how to register your documents.
 
-### Configuration API
+### Command line tools {#command-line-tools}
 
 You need to create search domain and text fields before registering
-documents. Configuration API is used for them. This section describes
-how to create a search domain.
+documents. Groonga CouldSearch includes some command line tools to do it.
+This section describes how to create a search domain by those commands.
 
-Configuration API is for creating, configuring and managing search
-domains. Configuration API requires `Action` parameter and `Version`
+Groonga CloudSearch's command line tools are named as "gcs-...", and they
+are compatible to Amazon CloudSearch's "cs-..." commands.
+
+See also: [Amazon CloudSearch Command Line Tool Reference - Amazon CloudSearch](http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/SvcCLT.html).
+
+Amazon's cs-commands require authentication but gcs-commands don't implement
+it yet. You can omit authentication related parameters.
+
+See also: [Running the Amazon CloudSearch Commands - Amazon CloudSearch](http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/runningcmds.html)
+for details.
+
+Instead, gcs-commands work only on the computer itself. In other words,
+they cannot configure search domains of a Groonga CouldSearch instance
+deployed on another computer. You must log in to the computer by SSH or
+something to use gcs-commands.
+
+By the way, the `gcs-import-example` command is written as a shell script
+with these gcs-commands.
+
+### Creating search domain
+
+To create a new search domain, use `gcs-create-domain` command.
+It requires `--domain-name` parameter to specify a new search domain name
+to be created.
+
+Here is an command line to create `address` search domain:
+
+    $ gcs-create-domain --domain-name address
+
+See also: [cs-create-domain - Amazon
+CloudSearch](http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/CLTCreateDomain.html)
+for details.
+
+### Defining index field
+
+To define a new index field for the search domain, use `gcs-configure-fields`
+command. It requires three parameters: `--domain-name` the search domain name,
+`--name` a new index field name to be defined, and `--type` a type of the field.
+
+Here is an command line to define `name` index field to `address`
+search domain, as a text type field:
+
+    $ gcs-configure-fields --domain-name address --name name --type text
+
+See also: [cs-configure-fields - Amazon
+CloudSearch](http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/CLTConfigureFields.html)
+for details.
+
+### Registering documents
+
+To register documents, post documents in SDF JSON representation by the
+`gcs-post-sdf` command. SDF is acronym of Search Data Format. Here is a
+sample SDF JSON representation:
+
+    [
+      {
+        "type": "add",
+        "id": "id1",
+        "version": 1,
+        "lang": "en",
+        "fields": {
+          "name": "Brazil"
+        }
+      },
+      {
+        "type": "add",
+        "id": "id2",
+        "version": 1,
+        "lang": "en",
+        "fields": {
+          "name": "Enishi Tech Inc."
+        }
+      }
+    ]
+
+See also: [documents/batch JSON API - Amazon
+CloudSearch](http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/DocumentsBatch.JSON.html)
+for details of SDF JSON representation.
+
+Here is a command line to register documents that are stored in
+`addresses.sdf.json` to `address` search domain:
+
+    $ gcs-post-sdf --domain-name address --source ./addresses.sdf.json
+
+See also: [cs-post-sdf - Amazon
+CloudSearch](http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/CLTPostSDF.html)
+for details.
+
+Now, you can search registered documents! Yay!
+
+
+## How to register documents via HTTP {#how-to-register-documents-via-http}
+
+You can configure search domains and register documents, by not only
+gcs-commands but also APIs via HTTP.
+
+### Configuration API
+
+Configuration API is the interface to configure search domains via HTTP.
+This section describes how to create a search domain by the API.
+
+Configuration API requires `Action` parameter and `Version`
 parameter. `Version` parameter must be `2011-02-01` for all
 configuration API.
 
@@ -233,6 +339,15 @@ parameters.
 See also: [Request Authentication - Amazon
 CloudSearch](http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/requestauth.html)
 for details.
+
+Instead, Groonga CloudSearch's Configuration API can restrict the client
+IP range. By default it is "127.0.0.0/8", and you can change it by the
+`--privilege` option of the `gcs` command, like:
+
+    $ gcs --privilege "127.0.0.1/8,192.168.0.1/24"
+
+By the way, the `gcs-import-example-http` command is written as a shell script
+with these APIs.
 
 ### Creating search domain API
 
@@ -275,37 +390,9 @@ using [xip.io][] is:
 
  * `doc-DOMAIN_NAME-DOMAIN_ID.127.0.0.1.xip.io`
 
-Post documents in SDF JSON representation to the endpoint. SDF is
-acronym of Search Data Format. Here is a sample SDF JSON
-representation:
-
-    [
-      {
-        "type": "add",
-        "id": "id1",
-        "version": 1,
-        "lang": "en",
-        "fields": {
-          "name": "Brazil"
-        }
-      },
-      {
-        "type": "add",
-        "id": "id2",
-        "version": 1,
-        "lang": "en",
-        "fields": {
-          "name": "Enishi Tech Inc."
-        }
-      }
-    ]
-
-See also: [documents/batch JSON API - Amazon
-CloudSearch](http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/DocumentsBatch.JSON.html)
-for details of SDF JSON representation.
-
-Here is an API request to register documents that are stored in
-`addresses.sdf.json` to `address` search domain:
+Post documents in SDF JSON representation to the endpoint. Here is an API
+request to register documents that are stored in `addresses.sdf.json` to
+`address` search domain:
 
     $ curl -X POST --upload-file addresses.sdf.json --header "Content-Type: application/json" http://doc-address-00000000000000000000000000.127.0.0.1.xip.io:7575/2011-02-01/documents/batch
 
@@ -314,6 +401,7 @@ CloudSearch](http://docs.amazonwebservices.com/cloudsearch/latest/developerguide
 for details of response.
 
 Now, you can search registered documents! Yay!
+
 
 ## Next step
 
