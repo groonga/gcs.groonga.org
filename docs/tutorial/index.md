@@ -22,6 +22,7 @@ page](http://aws.amazon.com/cloudsearch/) about them.
    * [Start Groonga CloudSearch server](#start_groonga_cloudsearch_server)
    * [Import example documents](#import_example_documents)
  * [How to search documents](#how-to-search-documents)
+   
    * [Restrictions](#restrictions)
  * [How to register documents](#how-to-register-documents)
    * [Configuration API](#configuration_api)
