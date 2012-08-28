@@ -74,6 +74,8 @@ If you got {{ site.version }}, Groonga CloudSearch is installed successfully! Ye
 We have apt repositories that provide softwares required by Groonga
 CloudSearch. Here are instructions to install required softwares:
 
+Groonga CloudSearch package is hosted on [groonga](../faq/#search-engine)
+apt repository.
 To add apt repository for [groonga](../faq/#search-engine), create
 `/etc/apt/sources.list.d/groonga.list` file with the following
 content:
