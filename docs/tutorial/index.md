@@ -93,12 +93,8 @@ CloudSearch](http://docs.amazonwebservices.com/cloudsearch/latest/developerguide
 
 Groonga CloudSearch uses the following endpoint host name formats:
 
- * `search-DOMAIN_NAME-00000000000000000000000000.BASE_DOMAIN_NAME`
- * `doc-DOMAIN_NAME-00000000000000000000000000.BASE_DOMAIN_NAME`
-
-`DOMAIN_NAME` is search domain name. Search domain ID is always
-`00000000000000000000000000` for now. It'll be replaced unique ID in
-the future release.
+ * `search-DOMAIN_NAME-DOMAIN_ID.BASE_DOMAIN_NAME`
+ * `doc-DOMAIN_NAME-DOMAIN_ID.BASE_DOMAIN_NAME`
 
 `BASE_DOMAIN_NAME` can be an arbitrary name as long as we can reach the Groonga
 CloudSearch server via the endpoints.
@@ -107,18 +103,14 @@ provides wildcard DNS.
 
 With [xip.io][], the endpoints on `localhost` (`127.0.0.1`) can be represented as
 
- * `search-DOMAIN_NAME-00000000000000000000000000.127.0.0.1.xip.io`
- * `doc-DOMAIN_NAME-00000000000000000000000000.127.0.0.1.xip.io`
+ * `search-DOMAIN_NAME-DOMAIN_ID.127.0.0.1.xip.io`
+ * `doc-DOMAIN_NAME-DOMAIN_ID.127.0.0.1.xip.io`
 
 Of course, we can use `localhost` as `BASE_DOMAIN_NAME`, for example.
 If you do so, you need to setup these endpoints in /etc/hosts.
 In this tutorial, we just use [xip.io][] for simplicity.
 
 We use the domain whose name is `example` in this tutorial.
-The endpoints for the domain `example` are as follows.
-
- * `search-example-00000000000000000000000000.127.0.0.1.xip.io`
- * `doc-example-00000000000000000000000000.127.0.0.1.xip.io`
 
 ### Start Groonga CloudSearch server
 
@@ -133,10 +125,16 @@ Groonga CloudSearch server listens at
 
 ### Import example documents
 
-Import example documents for simple search API by
-`gcs-import-examples` command because search API is described before
-document registration API. Use another terminal and execute the following
-command:
+Groonga CloudSearch has two commands to import example documents for simple
+search API, because the search API is described before document registration
+API.
+
+ * `gcs-import-examples` prepares the search domain by other `gcs-*`
+   command line tools.
+ * `gcs-import-examples-http` does it by the configuration API via HTTP.
+
+Use another terminal and execute one of these commands.
+For example, if you use the command line tools version:
 
     $ gcs-import-examples
 
@@ -146,7 +144,8 @@ If you see
 
 Hit enter to start importing.
 
-If you need some action before start importing, you will see the instructions like the screenshot below. Follow the instructions and run `gcs-import-examples` again.
+If you need some action before start importing, you will see the instructions like the screenshot below.
+Follow the instructions and run `gcs-import-examples` again.
 
 <img src="gcs-import-examples-error.png" alt="gcs-import-examples command started with error" width="100%" />
 
@@ -155,6 +154,18 @@ When you hit the enter key, import will be started.
 <img src="gcs-import-examples-finished.png" alt="gcs-import-examples finished" width="100%" />
 
 OK. Test environment is prepared. Let's try search API.
+
+## Endpoints
+
+The endpoints for the domain `example` are automatically generated as follows.
+
+ * `search-example-y9jpanlfa3wsr4tmdc4k1y5vjp.127.0.0.1.xip.io:7575`
+ * `doc-example-y9jpanlfa3wsr4tmdc4k1y5vjp.127.0.0.1.xip.io:7575`
+
+The domain ID is automatically generated for each time.
+You can research the endpoints for your search domain, by the following command:
+
+    $ gcs-describe-domain --domain-name example
 
 ## How to search documents {#how-to-search-documents}
 
@@ -188,9 +199,8 @@ for returned JSON format.
 
 ### Restrictions
 
-Groonga CloudSearch only supports `q` parameter for now. Other
-parameters such as `start` and `size` will be supported in the future
-release.
+Groonga CloudSearch doesn't support sorted and/or restricted facets for now.
+Such features will be supported in the future release.
 
 See also: [Search Requests - Amazon
 CloudSearch](http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/Search.Requests.html)
@@ -262,7 +272,7 @@ The endpoint of Document Service API on Groonga CloudSearch
 using [xip.io][] is:
 
 
- * `doc-DOMAIN_NAME-00000000000000000000000000.127.0.0.1.xip.io`
+ * `doc-DOMAIN_NAME-DOMAIN_ID.127.0.0.1.xip.io`
 
 Post documents in SDF JSON representation to the endpoint. SDF is
 acronym of Search Data Format. Here is a sample SDF JSON
