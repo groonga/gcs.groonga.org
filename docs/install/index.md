@@ -71,7 +71,7 @@ If you got {{ site.version }}, Groonga CloudSearch is installed successfully! Ye
 
 ## Ubuntu 12.04 LTS (Precise Pangolin) {#ubuntu}
 
-There is apt repositories that provide softwares required by Groonga
+We have apt repositories that provide softwares required by Groonga
 CloudSearch. Here are instructions to install required softwares:
 
 To add apt repository for [groonga](../faq/#search-engine), create
