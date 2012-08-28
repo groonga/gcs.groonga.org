@@ -87,18 +87,11 @@ Install GPG key for the apt repository:
     sudo apt-get -y --allow-unauthenticated install groonga-keyring
     sudo apt-get update
 
-Install required softwares:
+Install the Groonga CloudSearch and depending libraries via the package "gcs":
 
-    sudo apt-get install -y libgroonga-dev npm make g++ pkg-config
-    sudo npm install -y -g node-gyp
+    sudo apt-get install -y gcs
 
-Install Groonga CloudSearch:
-
-    sudo npm install -y -g gcs
-
-You have `gcs` command that starts Groonga CloudSearch service in
-`/usr/local/bin/` directory.
-
+Then you have `gcs` command that starts Groonga CloudSearch service.
 To confirm that Groonga CloudSearch is installed successfully, type
 the following command:
 
