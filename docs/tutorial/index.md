@@ -120,7 +120,12 @@ We use the domain whose name is `example` in this tutorial.
 
 ### Start Groonga CloudSearch server
 
-Run Groonga CloudSearch server by `gcs` command:
+If you are on Ubuntu, run Groonga CloudSearch server as a service by the
+following command:
+
+    $ sudo service gcs start
+
+Otherwise, run the server by `gcs` command:
 
     $ gcs
 
