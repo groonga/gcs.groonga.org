@@ -105,7 +105,7 @@ If you got {{ site.version }}, Groonga CloudSearch is installed successfully! Ye
 After installation, you can start the Groonga CloudSearch server with the
 default port (7575) by the following command:
 
-    $ sudo /etc/init.d/gcs start
+    $ sudo service gcs start
 
 ## Others {#others}
 
