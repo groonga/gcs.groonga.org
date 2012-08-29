@@ -136,18 +136,11 @@ Groonga CloudSearch server listens at
 
 ### Import example documents
 
-Groonga CloudSearch has two commands to import example documents for simple
+Groonga CloudSearch has a command to import example documents for simple
 search API, because the search API is described before document registration
-API.
+API. Use another terminal and execute the command `gcs-import-examples-http`:
 
- * `gcs-import-examples` prepares the search domain by other `gcs-*`
-   command line tools.
- * `gcs-import-examples-http` does it by the configuration API via HTTP.
-
-Use another terminal and execute one of these commands.
-For example, if you use the command line tools version:
-
-    $ gcs-import-examples
+    $ gcs-import-examples-http
 
 If you see
 
@@ -156,7 +149,7 @@ If you see
 Hit enter to start importing.
 
 If you need some action before start importing, you will see the instructions like the screenshot below.
-Follow the instructions and run `gcs-import-examples` again.
+Follow the instructions and run `gcs-import-examples-http` again.
 
 <img src="gcs-import-examples-error.png" alt="gcs-import-examples command started with error" width="100%" />
 
@@ -177,6 +170,10 @@ The domain ID is automatically generated for each time.
 You can research the endpoints for your search domain, by the following command:
 
     $ gcs-describe-domain --domain-name example
+
+For the server running as a service:
+
+    $ sudo -u gcs -H gcs-describe-domain --domain-name example
 
 ## How to search documents {#how-to-search-documents}
 
@@ -245,6 +242,12 @@ they cannot configure search domains of a Groonga CloudSearch instance
 deployed on another computer. You must log in to the computer by SSH or
 something to use gcs-commands.
 
+Currently, all gcs-commands affect to the database generated at `~/.gcs`
+of the running user. So, if the server is running as a service, you have to
+run gcs-commands by the `gcs` user like:
+
+    $ sudo -u gcs -H gcs-describe-domain
+
 By the way, the `gcs-import-example` command is written as a shell script
 with these gcs-commands.
 
@@ -257,6 +260,10 @@ to be created.
 Here is an command line to create `address` search domain:
 
     $ gcs-create-domain --domain-name address
+
+For the server running as a service:
+
+    $ sudo -u gcs -H gcs-create-domain --domain-name address
 
 See also: [cs-create-domain - Amazon
 CloudSearch](http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/CLTCreateDomain.html)
@@ -272,6 +279,10 @@ Here is an command line to define `name` index field to `address`
 search domain, as a text type field:
 
     $ gcs-configure-fields --domain-name address --name name --type text
+
+For the server running as a service:
+
+    $ sudo -u gcs -H gcs-configure-fields --domain-name address --name name --type text
 
 See also: [cs-configure-fields - Amazon
 CloudSearch](http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/CLTConfigureFields.html)
@@ -313,6 +324,10 @@ Here is a command line to register documents that are stored in
 
     $ gcs-post-sdf --domain-name address --source ./addresses.sdf.json
 
+For the server running as a service:
+
+    $ sudo -u gcs -H gcs-post-sdf --domain-name address --source ./addresses.sdf.json
+
 See also: [cs-post-sdf - Amazon
 CloudSearch](http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/CLTPostSDF.html)
 for details.
@@ -350,6 +365,9 @@ IP range. By default it is "127.0.0.0/8", and you can change it by the
 `--privilege` option of the `gcs` command, like:
 
     $ gcs --privilege "127.0.0.1/8,192.168.0.1/24"
+
+If the server is running as a service, currently you cannot change the IP range
+and it is fixed to the default one. (It will be configurable in the future.)
 
 By the way, the `gcs-import-example-http` command is written as a shell script
 with these APIs.
