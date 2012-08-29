@@ -221,7 +221,7 @@ sections describe how to register your documents.
 ### Command line tools {#command-line-tools}
 
 You need to create search domain and text fields before registering
-documents. Groonga CouldSearch includes some command line tools to do it.
+documents. Groonga CloudSearch includes some command line tools to do it.
 This section describes how to create a search domain by those commands.
 
 Groonga CloudSearch's command line tools are named as "gcs-...", and they
@@ -236,7 +236,7 @@ See also: [Running the Amazon CloudSearch Commands - Amazon CloudSearch](http://
 for details.
 
 Instead, gcs-commands work only on the computer itself. In other words,
-they cannot configure search domains of a Groonga CouldSearch instance
+they cannot configure search domains of a Groonga CloudSearch instance
 deployed on another computer. You must log in to the computer by SSH or
 something to use gcs-commands.
 
