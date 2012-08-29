@@ -102,10 +102,14 @@ the following command:
 
 If you got {{ site.version }}, Groonga CloudSearch is installed successfully! Yey!
 
-After installation, you can start the Groonga CloudSearch server with the
-default port (7575) by the following command:
+### Daemon mode
+
+After installation, you can start the Groonga CloudSearch server as a daemon,
+with the default port (7575):
 
     $ sudo service gcs start
+
+The daemon works as a process of the `gcs` user.
 
 ## Others {#others}
 
