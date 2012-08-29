@@ -125,6 +125,8 @@ following command:
 
     $ sudo service gcs start
 
+<img src="gcs-started-ubuntu.png" alt="gcs started" width="100%" />
+
 Otherwise, run the server by `gcs` command:
 
     $ gcs
