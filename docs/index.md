@@ -21,6 +21,8 @@ of Groonga CloudSearch.
 [FAQ](faq/) answers frequently asked questions about Groonga
 CloudSearch.
 
+[norema (Node Reference Manual Search)](https://github.com/nroonga/norema) is a living example application using Groonga CloudSearch.
+
 ## About Amazon CloudSearch
 
 [Amazon CloudSearch Developer
