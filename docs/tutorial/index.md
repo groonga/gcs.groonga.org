@@ -233,22 +233,40 @@ are compatible to Amazon CloudSearch's "cs-..." commands.
 
 See also: [Amazon CloudSearch Command Line Tool Reference - Amazon CloudSearch](http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/SvcCLT.html).
 
-Amazon's cs-commands require authentication but gcs-commands don't implement
-it yet. You can omit authentication related parameters.
+There are two large difference between cs-commands and gcs-commands.
+
+First, Amazon's cs-commands require authentication but gcs-commands don't
+implement it yet. You can omit authentication related parameters.
 
 See also: [Running the Amazon CloudSearch Commands - Amazon CloudSearch](http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/runningcmds.html)
 for details.
 
-Instead, gcs-commands work only on the computer itself. In other words,
-they cannot configure search domains of a Groonga CloudSearch instance
-deployed on another computer. You must log in to the computer by SSH or
-something to use gcs-commands.
+Second, cs-commands work only for the Amazon CloudSearch server but gcs-commands
+can work for any host. You can specify the host name and the port number via the
+`--base-host` option, like:
 
-Currently, all gcs-commands affect to the database generated at `~/.gcs`
-of the running user. So, if the server is running as a service, you have to
-run gcs-commands by the `gcs` user like:
+    $ gcs-describe-domain --base-host=192.168.0.123:7575
 
-    $ sudo -u gcs -H gcs-describe-domain
+If you omit the option, gcs-commands will work for localhost:7575. And, if you
+want to configure Groonca CloudSearch on a remote server, Preliminarily, you
+have to start the service on the server with `--privilege` option to allow
+acesses from other computers, like:
+
+    $ gcs --privilege "127.0.0.1/8,192.168.0.1/24"
+
+By default it is "127.0.0.0/8", so you can configure the service only from the
+computer itself.
+
+If the server is running as a service, currently you cannot change the IP range
+and it is fixed to the default one. (It will be configurable in the future.)
+
+to start the service on the server with `--privilege` option to accept accesses
+from other computers, like:
+
+    $ gcs --privilege "127.0.0.1/8,192.168.0.1/24"
+
+By default it is "127.0.0.0/8", so you can configure the service only from the
+computer.
 
 By the way, the `gcs-import-example` command is written as a shell script
 with these gcs-commands.
@@ -262,10 +280,6 @@ to be created.
 Here is an command line to create `address` search domain:
 
     $ gcs-create-domain --domain-name address
-
-For the server running as a service:
-
-    $ sudo -u gcs -H gcs-create-domain --domain-name address
 
 See also: [cs-create-domain - Amazon
 CloudSearch](http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/CLTCreateDomain.html)
@@ -281,10 +295,6 @@ Here is an command line to define `name` index field to `address`
 search domain, as a text type field:
 
     $ gcs-configure-fields --domain-name address --name name --type text
-
-For the server running as a service:
-
-    $ sudo -u gcs -H gcs-configure-fields --domain-name address --name name --type text
 
 See also: [cs-configure-fields - Amazon
 CloudSearch](http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/CLTConfigureFields.html)
@@ -325,10 +335,6 @@ Here is a command line to register documents that are stored in
 `addresses.sdf.json` to `address` search domain:
 
     $ gcs-post-sdf --domain-name address --source ./addresses.sdf.json
-
-For the server running as a service:
-
-    $ sudo -u gcs -H gcs-post-sdf --domain-name address --source ./addresses.sdf.json
 
 See also: [cs-post-sdf - Amazon
 CloudSearch](http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/CLTPostSDF.html)
