@@ -247,26 +247,22 @@ can work for any host. You can specify the host name and the port number via the
 
     $ gcs-describe-domain --base-host=192.168.0.123:7575
 
-If you omit the option, gcs-commands will work for localhost:7575. And, if you
-want to configure Groonca CloudSearch on a remote server, Preliminarily, you
-have to start the service on the server with `--privilege` option to allow
-acesses from other computers, like:
+If you omit the option, gcs-commands will work for localhost:7575.
+
+And, if you want to configure a Groonca CloudSearch service on a remote server,
+preliminarily you have to start the service on the server with `--privilege`
+option to allow acesses from other computers, like:
 
     $ gcs --privilege "127.0.0.1/8,192.168.0.1/24"
 
-By default it is "127.0.0.0/8", so you can configure the service only from the
-computer itself.
+If the server is running as a service, you have to configure the IP range via
+an environment variable `GCS_PRIVILEGED_RANGES` and restart the service, like:
 
-If the server is running as a service, currently you cannot change the IP range
-and it is fixed to the default one. (It will be configurable in the future.)
+    $ export GCS_PRIVILEGED_RANGES=127.0.0.1/8,192.168.0.1/24
+    $ sudo service gcs restart
 
-to start the service on the server with `--privilege` option to accept accesses
-from other computers, like:
-
-    $ gcs --privilege "127.0.0.1/8,192.168.0.1/24"
-
-By default it is "127.0.0.0/8", so you can configure the service only from the
-computer.
+By default the privileged IP range is "127.0.0.0/8", so you can configure the
+service only from the computer itself.
 
 By the way, the `gcs-import-example` command is written as a shell script
 with these gcs-commands.
@@ -374,8 +370,11 @@ IP range. By default it is "127.0.0.0/8", and you can change it by the
 
     $ gcs --privilege "127.0.0.1/8,192.168.0.1/24"
 
-If the server is running as a service, currently you cannot change the IP range
-and it is fixed to the default one. (It will be configurable in the future.)
+If the server is running as a service, you have to configure the IP range via
+an environment variable `GCS_PRIVILEGED_RANGES` and restart the service, like:
+
+    $ export GCS_PRIVILEGED_RANGES=127.0.0.1/8,192.168.0.1/24
+    $ sudo service gcs restart
 
 By the way, the `gcs-import-example-http` command is written as a shell script
 with these APIs.
