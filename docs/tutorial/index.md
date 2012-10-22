@@ -233,7 +233,7 @@ are compatible to Amazon CloudSearch's "cs-..." commands.
 
 See also: [Amazon CloudSearch Command Line Tool Reference - Amazon CloudSearch](http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/SvcCLT.html).
 
-There are two large difference between cs-commands and gcs-commands.
+There are two large differences between cs-commands and gcs-commands.
 
 First, Amazon's cs-commands require authentication but gcs-commands don't
 implement it yet. You can omit authentication related parameters.
