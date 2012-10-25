@@ -72,7 +72,7 @@ Type the following command to confirm Groonga CloudSearch is installed
 successfully:
 
     $ gcs --version
-    {{ site.version }}
+    {{ site.gcs_version }}
 
 ### About search domain and endpoints
 
