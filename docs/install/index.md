@@ -37,6 +37,13 @@ the following command:
 
 If you got {{ site.gcs_version }}, Groonga CloudSearch is installed successfully! Yey!
 
+The all-in-one package also includes `gcs-console`, the administrative web interface server for Groonga CloudSearch. You can confirm the version of Groonga CloudSearch Console by the following command:
+
+    $ gcs-console --version
+    {{ site.gcs_console_version}}
+
+If you've got {{site.gcs_console_version}}, `gcs-console` is successfully installed!
+
 ## CentOS 6 {#centos}
 
 (CentOS 5 isn't supported because Python 2.5 or later is required.)
@@ -68,6 +75,17 @@ the following command:
     {{ site.gcs_version }}
 
 If you got {{ site.gcs_version }}, Groonga CloudSearch is installed successfully! Yey!
+
+Groonga CloudSearch Console (`gcs-console`), the administrative web interface server for Groonga CloudSearch is provided as a separated package from `gcs`. You can install it as follows:
+
+    sudo npm install -y -g gcs-console
+
+Now you can confirm the version of Groonga CloudSearch Console by the following command:
+
+    $ gcs-console --version
+    {{ site.gcs_console_version}}
+
+If you've got {{site.gcs_console_version}}, `gcs-console` is successfully installed!
 
 ## Ubuntu 12.04 LTS (Precise Pangolin) {#ubuntu}
 
@@ -102,6 +120,17 @@ the following command:
 
 If you got {{ site.gcs_version }}, Groonga CloudSearch is installed successfully! Yey!
 
+Groonga CloudSearch Console (`gcs-console`), the administrative web interface server for Groonga CloudSearch is provided as a separated package from `gcs`. You can install it as follows:
+
+    sudo apt-get install -y -g gcs-console
+
+Now you can confirm the version of Groonga CloudSearch Console by the following command:
+
+    $ gcs-console --version
+    {{ site.gcs_console_version}}
+
+If you've got {{site.gcs_console_version}}, `gcs-console` is successfully installed!
+
 ### Service mode
 
 After installation, you can start the Groonga CloudSearch server as a service
@@ -109,7 +138,11 @@ After installation, you can start the Groonga CloudSearch server as a service
 
     $ sudo service gcs start
 
-The service works as a process of the `gcs` user.
+You can start Groonga CloudSearch Console as a service (daemon), with the default port (7576):
+
+    $ sudo service gcs-console start
+
+These services works as a process of the `gcs` user.
 
 ## Others {#others}
 
@@ -130,3 +163,14 @@ the following command:
     {{ site.gcs_version }}
 
 If you got {{ site.gcs_version }}, Groonga CloudSearch is installed successfully! Yey!
+
+Groonga CloudSearch Console (`gcs-console`), the administrative web interface server for Groonga CloudSearch is provided as a separated package from `gcs`. You can install it as follows:
+
+    sudo npm install -y -g gcs-console
+
+Now you can confirm the version of Groonga CloudSearch Console by the following command:
+
+    $ gcs-console --version
+    {{ site.gcs_console_version}}
+
+If you've got {{site.gcs_console_version}}, `gcs-console` is successfully installed!
