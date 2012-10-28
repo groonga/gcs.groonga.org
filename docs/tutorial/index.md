@@ -140,9 +140,9 @@ Groonga CloudSearch server listens at
 
 Groonga CloudSearch has a command to import example documents for simple
 search API, because the search API is described before document registration
-API. Use another terminal and execute the command `gcs-import-examples-http`:
+API. Use another terminal and execute the command `gcs-import-examples`:
 
-    $ gcs-import-examples-http
+    $ gcs-import-examples
 
 If you see
 
