@@ -173,10 +173,6 @@ You can research the endpoints for your search domain, by the following command:
 
     $ gcs-describe-domain --domain-name example
 
-For the server running as a service:
-
-    $ sudo -u gcs -H gcs-describe-domain --domain-name example
-
 ## How to search documents {#how-to-search-documents}
 
 Simple search API is used for searching documents. Groonga CloudSearch
