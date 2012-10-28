@@ -175,15 +175,31 @@ You can research the endpoints for your search domain, by the following command:
 
 ## How to search documents {#how-to-search-documents}
 
-Simple search API is used for searching documents. Groonga CloudSearch
-also provides dashboard Web page at
-[http://localhost:7575/](http://localhost:7575/).
+Simple search API is used for searching documents. You also try searching with Groonga CloudSearch Console, which provides the administrative Web user interface. Consult the [Install document](/docs/install) and setup `gcs-console` package.
 
-Open [http://localhost:7575/](http://localhost:7575/) to try simple
-search API. Input `tokyo` to text field and press `Search` button! You
+Now, start Groonga CloudSearch Console.
+
+    $ gcs-console
+
+Make sure that Groonga CloudSearch server is also running. Groonga CloudSearch console communicate with Groonga CloudSearch server via HTTP, with Amazon CloudSearch compatible APIs.
+
+After Groonga CloudSearch console started,
+open [http://localhost:7576/](http://localhost:7576/).
+
+You will see available domains on the server.
+
+<img src="console-index.png" alt="Top page of console" width="100%" />
+
+Choose `example` domain. Domain details are shown.
+
+<img src="console-domain.png" alt="Details of Exmaple domain" width="100%" />
+
+Click `Search` tab.
+
+Input `tokyo` to text field and press `Search` button! You
 will get documents that have `tokyo` keyword in content.
 
-<img src="web-ui.png" alt="searching 'tokyo' with web UI" width="100%" />
+<img src="console-search.png" alt="Searching" width="100%" />
 
 There is the API URL corresponding to the query in the search page.
 To see raw response body in JSON, open the API URL.
