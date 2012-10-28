@@ -263,7 +263,7 @@ If you omit the option, gcs-commands will work for localhost:7575.
 
 And, if you want to configure a Groonga CloudSearch service on a remote server,
 preliminarily you have to start the service on the server with `--privilege`
-option to allow acesses from other computers, like:
+option to allow accesses from other computers, like:
 
     $ gcs --privilege "127.0.0.1/8,192.168.0.1/24"
 
