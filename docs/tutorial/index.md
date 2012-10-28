@@ -245,7 +245,7 @@ can work for any host. You can specify the host name and the port number via the
 
 If you omit the option, gcs-commands will work for localhost:7575.
 
-And, if you want to configure a Groonca CloudSearch service on a remote server,
+And, if you want to configure a Groonga CloudSearch service on a remote server,
 preliminarily you have to start the service on the server with `--privilege`
 option to allow acesses from other computers, like:
 
