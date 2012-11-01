@@ -110,6 +110,8 @@ After installation, you can start the Groonga CloudSearch server as a service
     $ sudo service gcs start
 
 The service works as a process of the `gcs` user.
+You can configure behaviours of the daemon via a configuration file
+`/etc/default/gcs` .
 
 ## Others {#others}
 
