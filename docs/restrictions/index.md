@@ -15,7 +15,7 @@ layout: default
 ## search API
 
 * Always search results are returned as a JSON.
-* Customizing fields, pagination, sorting, and XML-based response of the search API are not supported yet.
+* Custom rank expressions and threshold options are not supported yet.
 * XML responses are not supported yet.
 * ```rid``` in ```info``` object is always ```"000000000000000000000000000000000000000000000000000000000000000"```.
 * ```cpu-time-ms ``` in ```info``` object is always ```0```.
