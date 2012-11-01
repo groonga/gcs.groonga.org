@@ -162,7 +162,17 @@ description: Groonga CloudSearch is an Amazon CloudSearch compatible open source
     {{ ok }}
   </tr>
   <tr>
-    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/tuneranking.html">Result ranking</a></td>
+    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/sortingresults.html">Result ranking with field names</a></td>
+    {{ ok_with }} (v1.4.0-){{ end }}
+    {{ ok }}
+  </tr>
+  <tr>
+    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/tuneranking.html">Result ranking with custom rank expressions</a></td>
+    {{ ng }}
+    {{ ok }}
+  </tr>
+  <tr>
+    <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/thresholdresults.html">Result ranking with threshold</a></td>
     {{ ng }}
     {{ ok }}
   </tr>
