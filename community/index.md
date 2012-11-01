@@ -70,6 +70,8 @@ CloudSearch related questions.
 
 <p><a href="https://github.com/groonga/gcs">groonga/gcs</a> is the repository of Groonga CloudSearch.</p>
 
+<p><a href="https://github.com/groonga/gcs-console">groonga/gcs-console</a> is the repository of Groonga CloudSearch Console.</p>
+
 <p>If you find a bug or have a feature request, submit it to <a href="https://github.com/groonga/gcs/issues">the issue tracker on GitHub</a>. Pull request is also welcome.</p>
 
 <p><a href="https://github.com/groonga/gcs/wiki">The Wiki on GitHub</a> is used for developers. There are <a href="https://github.com/groonga/gcs/wiki/Roadmap">the roadmap</a>, documents to start to develop Groonga CloudSearch itself and so on.</p>

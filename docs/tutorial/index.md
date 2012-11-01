@@ -72,7 +72,7 @@ Type the following command to confirm Groonga CloudSearch is installed
 successfully:
 
     $ gcs --version
-    {{ site.version }}
+    {{ site.gcs_version }}
 
 ### About search domain and endpoints
 
@@ -144,9 +144,9 @@ the configuration file `/etc/default/gcs` instead of command line options.
 
 Groonga CloudSearch has a command to import example documents for simple
 search API, because the search API is described before document registration
-API. Use another terminal and execute the command `gcs-import-examples-http`:
+API. Use another terminal and execute the command `gcs-import-examples`:
 
-    $ gcs-import-examples-http
+    $ gcs-import-examples
 
 If you see
 
@@ -177,21 +177,33 @@ You can research the endpoints for your search domain, by the following command:
 
     $ gcs-describe-domain --domain-name example
 
-For the server running as a service:
-
-    $ sudo -u gcs -H gcs-describe-domain --domain-name example
-
 ## How to search documents {#how-to-search-documents}
 
-Simple search API is used for searching documents. Groonga CloudSearch
-also provides dashboard Web page at
-[http://localhost:7575/](http://localhost:7575/).
+Simple search API is used for searching documents. You also try searching with Groonga CloudSearch Console, which provides the administrative Web user interface. Consult the [Install document](/docs/install) and setup `gcs-console` package.
 
-Open [http://localhost:7575/](http://localhost:7575/) to try simple
-search API. Input `tokyo` to text field and press `Search` button! You
+Now, start Groonga CloudSearch Console.
+
+    $ gcs-console
+
+Make sure that Groonga CloudSearch server is also running. Groonga CloudSearch console communicate with Groonga CloudSearch server via HTTP, with Amazon CloudSearch compatible APIs.
+
+After Groonga CloudSearch console started,
+open [http://localhost:7576/](http://localhost:7576/).
+
+You will see available domains on the server.
+
+<img src="console-index.png" alt="Top page of console" width="100%" />
+
+Choose `example` domain. Domain details are shown.
+
+<img src="console-domain.png" alt="Details of Exmaple domain" width="100%" />
+
+Click `Search` tab.
+
+Input `tokyo` to text field and press `Search` button! You
 will get documents that have `tokyo` keyword in content.
 
-<img src="web-ui.png" alt="searching 'tokyo' with web UI" width="100%" />
+<img src="console-search.png" alt="Searching" width="100%" />
 
 There is the API URL corresponding to the query in the search page.
 To see raw response body in JSON, open the API URL.
@@ -253,9 +265,9 @@ can work for any host. You can specify the host name and the port number via the
 
 If you omit the option, gcs-commands will work for localhost:7575.
 
-And, if you want to configure a Groonca CloudSearch service on a remote server,
+And, if you want to configure a Groonga CloudSearch service on a remote server,
 preliminarily you have to start the service on the server with `--privilege`
-option to allow acesses from other computers, like:
+option to allow accesses from other computers, like:
 
     $ gcs --privilege "127.0.0.1/8,192.168.0.1/24"
 

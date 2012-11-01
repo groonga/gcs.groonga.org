@@ -12,8 +12,8 @@ description: Groonga CloudSearch is an Amazon CloudSearch compatible open source
      compatible open source full text search server.</p>
 
   <div id="featured">
-    <p id="version"><span id="version-number">v{{ site.version }}</span>
-                    <span id="release-date">({{ site.release_date }})</span></p>
+    <p id="version"><span id="version-number">v{{ site.gcs_version }}</span>
+                    <span id="release-date">({{ site.gcs_release_date }})</span></p>
     <p id="install"><a href="docs/install/">Install</a></p>
     <p id="tutorial"><a href="docs/tutorial/">Tutorial</a></p>
   </div>
