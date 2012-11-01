@@ -138,7 +138,11 @@ After installation, you can start the Groonga CloudSearch server as a service
 
     $ sudo service gcs start
 
-You can start Groonga CloudSearch Console as a service (daemon), with the default port (7576):
+You can configure behaviours of the `gcs` service via a configuration file
+`/etc/default/gcs` .
+
+And, you can start Groonga CloudSearch Console as a service (daemon), with the
+default port (7576):
 
     $ sudo service gcs-console start
 
