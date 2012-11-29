@@ -135,6 +135,10 @@ Otherwise, run the server by `gcs` command:
 
 Groonga CloudSearch server listens at
 [http://localhost:7575/](http://localhost:7575/) by default.
+You'll configure behaviours of the server via command line options.
+See the help document ( `gcs --help` ).
+If you are running the server as a service, then you have to modify
+the configuration file `/etc/default/gcs` instead of command line options.
 
 ### Import example documents
 
