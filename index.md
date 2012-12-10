@@ -257,12 +257,12 @@ description: Groonga CloudSearch is an Amazon CloudSearch compatible open source
   </tr>
   <tr>
     <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/CLTPostSDF.html">Posting documents as SDF batches</a></td>
-    {{ ok_with }} (v1.2.0-, JSON only){{ end }}
+    {{ ok_with }} (v1.2.0-, XML SDF batches are available on v1.5.0-){{ end }}
     {{ ok }}
   </tr>
   <tr>
     <td><a href="http://docs.amazonwebservices.com/cloudsearch/latest/developerguide/CLTConfigureFromSDF.html">Configuring by SDF batches</a></td>
-    {{ ng }}
+    {{ ok_with }} (v1.5.0-){{ end }}
     {{ ok }}
   </tr>
   </tbody>
@@ -276,7 +276,7 @@ description: Groonga CloudSearch is an Amazon CloudSearch compatible open source
   </tr>
   <tr>
     <td><a href="https://console.aws.amazon.com/cloudsearch/home/">Management Console</a></td>
-    {{ ng }}
+    {{ ok_with }} (by Groonga CloudSearch Console){{ end }}
     {{ ok }}
   </tr>
   <tr>
